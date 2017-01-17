@@ -1,0 +1,12 @@
+{
+    "name": "tobiasoberrauch/platform-engine",
+    "authors": [
+        {
+            "name": "Tobias Oberrauch",
+            "email": "t.oberrauch@simplicity.ag"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.2"
+    }
+}
