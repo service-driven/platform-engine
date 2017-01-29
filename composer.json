@@ -1,5 +1,5 @@
 {
-    "name": "tobiasoberrauch/platform-engine",
+    "name": "platform-engine",
     "bin": [
         "bin/platform"
     ],
@@ -11,12 +11,13 @@
     ],
     "require": {
         "symfony/console": "^3.2",
-        "symfony/finder": "^3.2"
+        "symfony/finder": "^3.2",
+        "docker-php/docker-php": "^1.24"
     },
     "autoload": {
         "psr-4": {
             "PlatformEngine\\Engine\\Console\\": "engine/console/",
-            "Platform\\": "platform/"
+            "PlatformEngine\\Platform\\": "platform/"
         }
     }
 }
