@@ -1,0 +1,26 @@
+{
+  "name": "event-driven/phpstorm-plugin",
+  "description": "",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "EventDriven\\PhpStormComposerPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      " EventDriven\\PhpStormComposerPluginTest\\": "test/"
+    }
+  },
+  "extra": {
+    "class": "EventDriven\\PhpStormComposerPlugin\\Composer\\PhpStormConfigPlugin"
+  },
+  "require": {
+    "composer-plugin-api": "^1.0",
+    "composer/composer": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6"
+  }
+}

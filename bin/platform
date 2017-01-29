@@ -5,8 +5,8 @@ chdir(dirname(__DIR__));
 
 include __DIR__ . '/../vendor/autoload.php';
 
+use PlatformEngine\Engine\Console\Command\DebugCommand;
 use Symfony\Component\Console\Application;
-use Console\PlatformEngine\Command\DebugCommand;
 
 $application = new Application();
 $application->add(new DebugCommand());

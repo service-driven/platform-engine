@@ -15,7 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Console\\PlatformEngine\\": "console/PlatformEngine/src/"
+            "PlatformEngine\\Engine\\Console\\": "engine/console/",
+            "Platform\\": "platform/"
         }
     }
 }
