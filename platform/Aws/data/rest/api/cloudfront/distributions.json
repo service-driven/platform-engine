@@ -1,0 +1,835 @@
+{
+    "DistributionList": {
+        "Items": [
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "S3OriginConfig": {
+                                "OriginAccessIdentity": "origin-access-identity/cloudfront/E1MIP0M8HT9NP8"
+                            }, 
+                            "OriginPath": "", 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "S3-static-dev.casual-fashion.com", 
+                            "DomainName": "static-dev.casual-fashion.com.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d2ppj3e85mdfvu.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "S3-static-dev.casual-fashion.com", 
+                    "ViewerProtocolPolicy": "allow-all", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Items": [
+                                "Origin"
+                            ], 
+                            "Quantity": 1
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": true
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "", 
+                "ViewerCertificate": {
+                    "SSLSupportMethod": "sni-only", 
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "MinimumProtocolVersion": "TLSv1", 
+                    "Certificate": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "CertificateSource": "acm"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-07-06T13:48:46.939Z", 
+                "Id": "E3P4ZUT7OCUXDS", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "static-dev.casual-fashion.com"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "assets", 
+                            "DomainName": "dev-shop-base-b2b-someda-shopassetsb2bsomedaybuck-mwahs5ktuzv.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d39vekgxbzc876.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "assets", 
+                    "ViewerProtocolPolicy": "allow-all", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for B2B assets", 
+                "ViewerCertificate": {
+                    "CloudFrontDefaultCertificate": true, 
+                    "MinimumProtocolVersion": "SSLv3", 
+                    "CertificateSource": "cloudfront"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-07-21T07:29:00.655Z", 
+                "Id": "EJ5AO6QTU8FK5", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "assets.someday-b2b-development.com"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "media", 
+                            "DomainName": "dev-shop-base-b2b-someda-shopmediab2bsomedaybucke-12vn04v8stcq1.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d2nwf7uvsm4yp0.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "media", 
+                    "ViewerProtocolPolicy": "allow-all", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for B2B media", 
+                "ViewerCertificate": {
+                    "CloudFrontDefaultCertificate": true, 
+                    "MinimumProtocolVersion": "SSLv3", 
+                    "CertificateSource": "cloudfront"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-07-21T07:29:00.733Z", 
+                "Id": "E1XN1HFL3P9E6H", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "media.someday-b2b-development.com"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "static", 
+                            "DomainName": "dev-shop-base-b2b-someda-shopstaticb2bsomedaybuck-imcve7pqcxy1.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d1y0k532wbzj4f.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "static", 
+                    "ViewerProtocolPolicy": "allow-all", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for B2B static", 
+                "ViewerCertificate": {
+                    "CloudFrontDefaultCertificate": true, 
+                    "MinimumProtocolVersion": "SSLv3", 
+                    "CertificateSource": "cloudfront"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-07-21T07:29:01.109Z", 
+                "Id": "EYIJ5SAWKL3Y0", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "static.someday-b2b-development.com"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Items": [
+                        {
+                            "TrustedSigners": {
+                                "Enabled": false, 
+                                "Quantity": 0
+                            }, 
+                            "TargetOriginId": "S3Origin", 
+                            "ViewerProtocolPolicy": "https-only", 
+                            "ForwardedValues": {
+                                "Headers": {
+                                    "Quantity": 0
+                                }, 
+                                "Cookies": {
+                                    "Forward": "none"
+                                }, 
+                                "QueryString": false
+                            }, 
+                            "MaxTTL": 31536000, 
+                            "PathPattern": "/error-pages/*", 
+                            "SmoothStreaming": false, 
+                            "DefaultTTL": 86400, 
+                            "AllowedMethods": {
+                                "Items": [
+                                    "HEAD", 
+                                    "GET"
+                                ], 
+                                "CachedMethods": {
+                                    "Items": [
+                                        "HEAD", 
+                                        "GET"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "Quantity": 2
+                            }, 
+                            "MinTTL": 0, 
+                            "Compress": false
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "S3OriginConfig": {
+                                "OriginAccessIdentity": ""
+                            }, 
+                            "OriginPath": "", 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "S3Origin", 
+                            "DomainName": "dev-shop-cloudfront-dynamic-cloudfronterrorbucket-n55bzgwybc0l.s3.amazonaws.com"
+                        }, 
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "www-live", 
+                            "DomainName": "www-live.simplicity-development.de"
+                        }
+                    ], 
+                    "Quantity": 2
+                }, 
+                "DomainName": "dniuuh1i70yfy.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "www-live", 
+                    "ViewerProtocolPolicy": "redirect-to-https", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Items": [
+                                "*"
+                            ], 
+                            "Quantity": 1
+                        }, 
+                        "Cookies": {
+                            "Forward": "all"
+                        }, 
+                        "QueryString": true
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "DELETE", 
+                            "POST", 
+                            "GET", 
+                            "OPTIONS", 
+                            "PUT", 
+                            "PATCH"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 7
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": true
+                }, 
+                "Comment": "Cloudfront fuer WEB", 
+                "ViewerCertificate": {
+                    "SSLSupportMethod": "sni-only", 
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "MinimumProtocolVersion": "TLSv1", 
+                    "Certificate": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "CertificateSource": "acm"
+                }, 
+                "CustomErrorResponses": {
+                    "Items": [
+                        {
+                            "ErrorCode": 502, 
+                            "ResponsePagePath": "/error-pages/50x.html", 
+                            "ResponseCode": "502", 
+                            "ErrorCachingMinTTL": 30
+                        }, 
+                        {
+                            "ErrorCode": 503, 
+                            "ResponsePagePath": "/error-pages/50x.html", 
+                            "ResponseCode": "503", 
+                            "ErrorCachingMinTTL": 30
+                        }
+                    ], 
+                    "Quantity": 2
+                }, 
+                "LastModifiedTime": "2016-11-09T07:13:07.954Z", 
+                "Id": "E1UBWYUK6BDKA6", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "simplicity-development.de", 
+                        "www.simplicity-development.de"
+                    ], 
+                    "Quantity": 2
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "static", 
+                            "DomainName": "dev-shop-base-b2c-staticbucket-u8tj0nzewra8.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d34oli6g5hce7m.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "static", 
+                    "ViewerProtocolPolicy": "redirect-to-https", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for static", 
+                "ViewerCertificate": {
+                    "SSLSupportMethod": "sni-only", 
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "MinimumProtocolVersion": "TLSv1", 
+                    "Certificate": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "CertificateSource": "acm"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-11-09T07:14:08.229Z", 
+                "Id": "E230X02GL7N071", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "static.simplicity-development.de"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "assets", 
+                            "DomainName": "dev-shop-base-b2c-assetsbucket-z6ame9r4jqk4.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d2niiwa3e9nm8k.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "assets", 
+                    "ViewerProtocolPolicy": "redirect-to-https", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for assets", 
+                "ViewerCertificate": {
+                    "SSLSupportMethod": "sni-only", 
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "MinimumProtocolVersion": "TLSv1", 
+                    "Certificate": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "CertificateSource": "acm"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-11-09T07:14:08.307Z", 
+                "Id": "E4CQO9T17WDOB", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "assets.simplicity-development.de"
+                    ], 
+                    "Quantity": 1
+                }
+            }, 
+            {
+                "Status": "Deployed", 
+                "CacheBehaviors": {
+                    "Quantity": 0
+                }, 
+                "WebACLId": "", 
+                "Origins": {
+                    "Items": [
+                        {
+                            "OriginPath": "", 
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "match-viewer", 
+                                "HTTPPort": 80, 
+                                "OriginSslProtocols": {
+                                    "Items": [
+                                        "SSLv3", 
+                                        "TLSv1"
+                                    ], 
+                                    "Quantity": 2
+                                }, 
+                                "HTTPSPort": 443
+                            }, 
+                            "CustomHeaders": {
+                                "Quantity": 0
+                            }, 
+                            "Id": "media", 
+                            "DomainName": "dev-shop-base-b2c-mediabucket-1sywvm9apko7s.s3.amazonaws.com"
+                        }
+                    ], 
+                    "Quantity": 1
+                }, 
+                "DomainName": "d3le8eqq422qhx.cloudfront.net", 
+                "PriceClass": "PriceClass_100", 
+                "Enabled": true, 
+                "DefaultCacheBehavior": {
+                    "TrustedSigners": {
+                        "Enabled": false, 
+                        "Quantity": 0
+                    }, 
+                    "TargetOriginId": "media", 
+                    "ViewerProtocolPolicy": "redirect-to-https", 
+                    "ForwardedValues": {
+                        "Headers": {
+                            "Quantity": 0
+                        }, 
+                        "Cookies": {
+                            "Forward": "none"
+                        }, 
+                        "QueryString": false
+                    }, 
+                    "MaxTTL": 31536000, 
+                    "SmoothStreaming": false, 
+                    "DefaultTTL": 86400, 
+                    "AllowedMethods": {
+                        "Items": [
+                            "HEAD", 
+                            "GET"
+                        ], 
+                        "CachedMethods": {
+                            "Items": [
+                                "HEAD", 
+                                "GET"
+                            ], 
+                            "Quantity": 2
+                        }, 
+                        "Quantity": 2
+                    }, 
+                    "MinTTL": 0, 
+                    "Compress": false
+                }, 
+                "Comment": "Cloudfront for media", 
+                "ViewerCertificate": {
+                    "SSLSupportMethod": "sni-only", 
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "MinimumProtocolVersion": "TLSv1", 
+                    "Certificate": "arn:aws:acm:us-east-1:074934811965:certificate/23f1407e-c6b8-4e42-90ed-80c422c61ff4", 
+                    "CertificateSource": "acm"
+                }, 
+                "CustomErrorResponses": {
+                    "Quantity": 0
+                }, 
+                "LastModifiedTime": "2016-11-09T07:14:08.389Z", 
+                "Id": "E1E6ZM8B7RQ1FX", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "RestrictionType": "none", 
+                        "Quantity": 0
+                    }
+                }, 
+                "Aliases": {
+                    "Items": [
+                        "media.simplicity-development.de"
+                    ], 
+                    "Quantity": 1
+                }
+            }
+        ]
+    }
+}

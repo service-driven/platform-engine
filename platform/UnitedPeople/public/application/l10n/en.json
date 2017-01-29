@@ -1,0 +1,51 @@
+{
+    "header": {
+        "navbar": {
+            "UPLOAD": "Upload",
+            "new": {
+                "NEW": "New",
+                "PROJECT": "Projects",
+                "TASK": "Task",
+                "USER": "User",
+                "EMAIL": "Email"
+            },
+            "NOTIFICATIONS": "Notifications"
+        }
+    },
+    "aside": {
+        "nav": {
+            "HEADER": "Applications",
+            "DASHBOARD": "Dashboard",
+            "CALENDAR": "Calendar",
+            "EMAIL": "Email",
+            "ANALYTICS": "Analytics",
+            "WIDGETS": "Widgets",
+            "visions": {
+                "VISIONS": "Visions",
+                "GOALS": "Goals",
+                "STRATEGIES": "Strategies",
+                "ISSUES": "Issues"
+            },
+            "connections": {
+                "CONNECTIONS": "Connections",
+                "EDGES": "Edges",
+                "NODES": "Nodes",
+                "PEOPLE": "People"
+            },
+            "data": {
+                "DATA": "Data",
+                "COMPETITORS": "Competitors",
+                "REPORTS": "Reports"
+            },
+            "administration": {
+                "ADMINISTRATION": "Administration",
+                "IMPORTERS": "Importers",
+                "EXPORTERS": "Exporters",
+                "DATA_TYPES": "Data types",
+                "DATA_SOURCES": "Data sources"
+            }
+        },
+        "MILESTONE": "Milestone",
+        "RELEASE": "Release"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "name": "redis-master",
+      "box": "ubuntu/xenial64",
+      "ip": "192.168.70.70"
+    },
+    {
+      "name": "redis-slave",
+      "box": "ubuntu/xenial64",
+      "ip": "192.168.70.71"
+    }
+  ]
+}

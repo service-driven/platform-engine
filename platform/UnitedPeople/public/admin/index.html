@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../application/libs/angular/ng-admin/build/ng-admin.min.css">
+</head>
+<body data-ng-app="admin">
+
+<div ui-view="ng-admin"></div>
+
+<script src="../application/libs/angular/ng-admin/build/ng-admin.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var app = angular.module('admin', ['ng-admin']);
+
+    app.config([
+        'RestangularProvider',
+        function (RestangularProvider) {
+            RestangularProvider.addFullRequestInterceptor(function (element, operation, what, url, headers, params) {
+                if (operation === 'getList') {
+                    if (params._page) {
+                        var start = (params._page - 1) * params._perPage;
+                        var end = params._page * params._perPage - 1;
+                        params.range = "[" + start + "," + end + "]";
+                        delete params._page;
+                        delete params._perPage;
+                    }
+
+                    if (params._sortField) {
+                        params.sort = '["' + params._sortField + '","' + params._sortDir + '"]';
+                        delete params._sortField;
+                        delete params._sortDir;
+                    }
+
+                    if (params._filters) {
+                        params.filter = params._filters;
+                        delete params._filters
+                        ;
+                    }
+                }
+
+                return {
+                    params: params
+                };
+            });
+
+            RestangularProvider.addResponseInterceptor(function (data, operation) {
+                debugger;
+                if (operation === "getList") {
+                    debugger;
+                    return [
+                        {
+                            "id": 1,
+                            "name": "Leanne Graham",
+                            "username": "Bret",
+                            "email": "Sincere@april.biz",
+                            "address": {
+                                "street": "Kulas Light",
+                                "suite": "Apt. 556",
+                                "city": "Gwenborough",
+                                "zipcode": "92998-3874",
+                                "geo": {
+                                    "lat": "-37.3159",
+                                    "lng": "81.1496"
+                                }
+                            },
+                            "phone": "1-770-736-8031 x56442",
+                            "website": "hildegard.org",
+                            "company": {
+                                "name": "Romaguera-Crona",
+                                "catchPhrase": "Multi-layered client-server neural-net",
+                                "bs": "harness real-time e-markets"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ervin Howell",
+                            "username": "Antonette",
+                            "email": "Shanna@melissa.tv",
+                            "address": {
+                                "street": "Victor Plains",
+                                "suite": "Suite 879",
+                                "city": "Wisokyburgh",
+                                "zipcode": "90566-7771",
+                                "geo": {
+                                    "lat": "-43.9509",
+                                    "lng": "-34.4618"
+                                }
+                            },
+                            "phone": "010-692-6593 x09125",
+                            "website": "anastasia.net",
+                            "company": {
+                                "name": "Deckow-Crist",
+                                "catchPhrase": "Proactive didactic contingency",
+                                "bs": "synergize scalable supply-chains"
+                            }
+                        }
+                    ];
+
+                    return data._embedded.items;
+                }
+
+                return data;
+            });
+        }
+    ]);
+    app.config([
+        'NgAdminConfigurationProvider',
+        function (NgAdminConfigurationProvider) {
+            var admin = NgAdminConfigurationProvider.application('ng-admin blog demo');
+            var debug = admin.debug(true);
+            admin.baseApiUrl('http://unitedpeople.local/api/');
+
+            var node = NgAdminConfigurationProvider.entity('nodes');
+            admin.addEntity(node);
+
+            NgAdminConfigurationProvider.configure(admin);
+        }
+    ]);
+
+</script>
+</body>
+</html>

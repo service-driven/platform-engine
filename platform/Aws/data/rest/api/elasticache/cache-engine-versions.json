@@ -1,0 +1,81 @@
+{
+    "CacheEngineVersions": [
+        {
+            "Engine": "memcached", 
+            "CacheEngineDescription": "memcached", 
+            "CacheEngineVersionDescription": "memcached version 1.4.14", 
+            "CacheParameterGroupFamily": "memcached1.4", 
+            "EngineVersion": "1.4.14"
+        }, 
+        {
+            "Engine": "memcached", 
+            "CacheEngineDescription": "memcached", 
+            "CacheEngineVersionDescription": "memcached version 1.4.24", 
+            "CacheParameterGroupFamily": "memcached1.4", 
+            "EngineVersion": "1.4.24"
+        }, 
+        {
+            "Engine": "memcached", 
+            "CacheEngineDescription": "memcached", 
+            "CacheEngineVersionDescription": "memcached version 1.4.5", 
+            "CacheParameterGroupFamily": "memcached1.4", 
+            "EngineVersion": "1.4.5"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.6.13", 
+            "CacheParameterGroupFamily": "redis2.6", 
+            "EngineVersion": "2.6.13"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.19", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.19"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.21", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.21"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.22", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.22"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.23", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.23"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.24", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.24"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 2.8.6", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "EngineVersion": "2.8.6"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheEngineDescription": "Redis", 
+            "CacheEngineVersionDescription": "redis version 3.2.4", 
+            "CacheParameterGroupFamily": "redis3.2", 
+            "EngineVersion": "3.2.4"
+        }
+    ]
+}

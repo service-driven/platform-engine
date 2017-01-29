@@ -1,0 +1,334 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "casualfashion", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-8b5530e3"
+                }
+            ], 
+            "InstanceCreateTime": "2016-11-17T14:49:03.397Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-4"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.4", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "ReadReplicaSourceDBInstanceIdentifier": "dss6i7jru9jenq", 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "23:05-23:35", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-7c93cf15", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-e8512293", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "dev-shop-db-b2c-shopb2cdbsubnetgroup-1uwagxvghx3gt", 
+                "VpcId": "vpc-22bbfe4b", 
+                "DBSubnetGroupDescription": "Subnet for RDS instance", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 300, 
+            "BackupRetentionPeriod": 0, 
+            "DBName": "casualfashion", 
+            "PreferredMaintenanceWindow": "sun:02:42-sun:03:12", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "ds1ieanh8d0xvqv.cpsf6qcpp78n.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "EngineVersion": "9.4.5", 
+            "StatusInfos": [
+                {
+                    "Status": "replicating", 
+                    "StatusType": "read replication", 
+                    "Normal": true
+                }
+            ], 
+            "AvailabilityZone": "eu-central-1a", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-6W2AMAN5CQ4YJGQ2OY53D45REI", 
+            "CACertificateIdentifier": "rds-ca-2015", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.medium", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "ds1ieanh8d0xvqv"
+        }, 
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "casualfashion", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-8b5530e3"
+                }
+            ], 
+            "InstanceCreateTime": "2016-11-17T14:49:03.769Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-4"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.4", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "ReadReplicaSourceDBInstanceIdentifier": "dss6i7jru9jenq", 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "23:05-23:35", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-7c93cf15", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-e8512293", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "dev-shop-db-b2c-shopb2cdbsubnetgroup-1uwagxvghx3gt", 
+                "VpcId": "vpc-22bbfe4b", 
+                "DBSubnetGroupDescription": "Subnet for RDS instance", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 300, 
+            "BackupRetentionPeriod": 0, 
+            "DBName": "casualfashion", 
+            "PreferredMaintenanceWindow": "sun:02:42-sun:03:12", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "dseoc2lmztmbrq.cpsf6qcpp78n.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "EngineVersion": "9.4.5", 
+            "StatusInfos": [
+                {
+                    "Status": "replicating", 
+                    "StatusType": "read replication", 
+                    "Normal": true
+                }
+            ], 
+            "AvailabilityZone": "eu-central-1b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-WUC7IM2SXIHUSB4NZBB7OIIL7E", 
+            "CACertificateIdentifier": "rds-ca-2015", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.medium", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "dseoc2lmztmbrq"
+        }, 
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "casualfashion", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-8b5530e3"
+                }
+            ], 
+            "InstanceCreateTime": "2016-09-08T10:41:25.444Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-4"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": true, 
+            "LatestRestorableTime": "2016-11-29T23:03:54Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.4", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredBackupWindow": "23:05-23:35", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-7c93cf15", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-e8512293", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "dev-shop-db-b2c-shopb2cdbsubnetgroup-1uwagxvghx3gt", 
+                "VpcId": "vpc-22bbfe4b", 
+                "DBSubnetGroupDescription": "Subnet for RDS instance", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "SecondaryAvailabilityZone": "eu-central-1b", 
+            "ReadReplicaDBInstanceIdentifiers": [
+                "dseoc2lmztmbrq", 
+                "dsuraz8lnbjyxh", 
+                "ds1ieanh8d0xvqv"
+            ], 
+            "AllocatedStorage": 300, 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "casualfashion", 
+            "PreferredMaintenanceWindow": "sun:02:42-sun:03:12", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "dss6i7jru9jenq.cpsf6qcpp78n.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "EngineVersion": "9.4.5", 
+            "AvailabilityZone": "eu-central-1a", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-K4TS7FJENJD6TG3J4KGY3LNA34", 
+            "CACertificateIdentifier": "rds-ca-2015", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.m4.xlarge", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "dss6i7jru9jenq"
+        }, 
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "casualfashion", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-8b5530e3"
+                }
+            ], 
+            "InstanceCreateTime": "2016-11-17T15:09:29.441Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-4"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.4", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "ReadReplicaSourceDBInstanceIdentifier": "dss6i7jru9jenq", 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "23:05-23:35", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-7c93cf15", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-e8512293", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "dev-shop-db-b2c-shopb2cdbsubnetgroup-1uwagxvghx3gt", 
+                "VpcId": "vpc-22bbfe4b", 
+                "DBSubnetGroupDescription": "Subnet for RDS instance", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 300, 
+            "BackupRetentionPeriod": 0, 
+            "DBName": "casualfashion", 
+            "PreferredMaintenanceWindow": "sun:02:42-sun:03:12", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "dsuraz8lnbjyxh.cpsf6qcpp78n.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "EngineVersion": "9.4.5", 
+            "StatusInfos": [
+                {
+                    "Status": "replicating", 
+                    "StatusType": "read replication", 
+                    "Normal": true
+                }
+            ], 
+            "AvailabilityZone": "eu-central-1b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-I3X2GGS4DLQCI7IIM222THA2Q4", 
+            "CACertificateIdentifier": "rds-ca-2015", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.medium", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "dsuraz8lnbjyxh"
+        }
+    ]
+}

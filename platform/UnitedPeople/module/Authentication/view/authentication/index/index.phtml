@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Aktion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->providers as $provider): ?>
+        <?php if ($provider['enabled']): ?>
+            <tr>
+                <td><a href="/auth/<?php echo strtolower($provider['id']); ?>"><?php echo $provider['id']; ?><a/></td>
+                <td><?php echo $provider['isLoggedIn'] ? 'Online' : 'Offline'; ?></td>
+                <td>
+                    <?php if ($provider['isLoggedIn']): ?>
+                        <a href="/auth/<?php echo strtolower($provider['id']); ?>/logout">Logout</a>
+                    <?php else: ?>
+                        <a href="/auth/<?php echo strtolower($provider['id']); ?>/login">Login</a>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        <?php else: ?>
+            <tr>
+                <td><?php echo $provider['id']; ?></td>
+                <td>Deaktiviert</td>
+                <td></td>
+            </tr>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    </tbody>
+</table>

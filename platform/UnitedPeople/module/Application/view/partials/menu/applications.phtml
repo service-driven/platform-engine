@@ -1,0 +1,36 @@
+<?php
+/** @var \Zend\Navigation\Page\Mvc $page */
+/** @var \Zend\Navigation\Page\Mvc $subPage */
+?>
+<div class="list-group lg-alt c-overflow">
+    <?php foreach ($this->container as $page): ?>
+        <?php if ($this->navigation()->accept($page)): ?>
+            <?php if ($page->hasPages()): ?>
+                <li class="sub-menu">
+                    <a href="<?php echo $page->getHref(); ?>" data-ma-action="submenu-toggle">
+                        <i class="<?php echo $page->get('icon'); ?>"></i> <?php echo $page->getLabel(); ?>
+                    </a>
+                    <ul>
+                        <?php foreach ($page->getPages() as $subPage): ?>
+                            <li>
+                                <a href="<?php echo $subPage->getHref(); ?>"><?php echo $subPage->getLabel(); ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php else: ?>
+                <a href="<?php echo $page->getHref(); ?>" class="list-group-item media">
+                    <div class="pull-left">
+                        <i class="<?php echo $page->get('icon'); ?>"></i>
+                    </div>
+
+                    <div class="media-body">
+                        <div class="lgi-heading"><?php echo $page->get('label'); ?></div>
+                        <small class="lgi-text"><?php echo $page->get('description'); ?></small>
+                    </div>
+                </a>
+            <?php endif; ?>
+        <?php endif; ?>
+
+    <?php endforeach; ?>
+</div>

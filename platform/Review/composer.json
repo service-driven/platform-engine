@@ -1,0 +1,24 @@
+{
+  "name": "simplicity/review-platform",
+  "authors": [
+    {
+      "name": "Tobias Oberrauch",
+      "email": "t.oberrauch@simplicity.ag"
+    }
+  ],
+  "require": {
+    "zfcampus/zf-console": "^1.3",
+    "chobie/jira-api-restclient": "^2.0@dev",
+    "zendframework/zend-mvc": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Simplicity\\ReviewPlatform\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Simplicity\\ReviewPlatformTest\\": "test"
+    }
+  }
+}

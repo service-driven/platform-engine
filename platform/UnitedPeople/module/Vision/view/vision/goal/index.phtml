@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="c-header" style="padding: 0 28px">
+        <h3 style="color:#fff;">
+            <?php echo $this->header['label']; ?>
+            <a href="<?php echo $this->url('goals', ['action' => 'create']); ?>" type="submit" class="btn palette-Light-Green bg waves-effect btn-lg pull-right">Neues Ziel definieren</a>
+        </h3>
+    </div>
+
+    <?php foreach ($this->content[Vision\Entity\Goal::SLUG] as $selector => $group): ?>
+        <div class="card">
+            <div class="card-header">
+                <h2><?php echo $group['label']; ?></h2>
+            </div>
+            <ul class="actions">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <i class="zmdi zmdi-more-vert"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="">Menu</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="card-body table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Strategie</th>
+                        <th>Kategorie</th>
+                        <th>Ansprechpartner</th>
+                        <th>Aktionen</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($group['items'] as $goal): ?>
+                        <tr>
+                            <td>
+                                <a href="<?php echo $this->url('goals', ['action' => 'show', 'id' => $goal->getId()]); ?>">
+                                    <?php echo $goal->getTitle(); ?>
+                                </a>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>Bearbeiten / Vorschlag einreichen</td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>

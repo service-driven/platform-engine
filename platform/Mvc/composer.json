@@ -1,0 +1,12 @@
+{
+    "name": "event-driven/mvc-platform",
+    "authors": [
+        {
+            "name": "Tobias Oberrauch",
+            "email": "t.oberrauch@simplicity.ag"
+        }
+    ],
+    "require": {
+        "zendframework/zend-mvc": "^3.0"
+    }
+}

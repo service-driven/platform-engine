@@ -1,0 +1,48 @@
+<?php
+
+namespace Schema\SchemaOrg\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use [[Action]]-based vocabulary, alongside types such as [[Comment]].
+ *
+ * @see http://schema.org/UserTweets Documentation on Schema.org
+ *
+ * @ORM\Entity
+ */
+class UserTweets extends UserInteraction
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * Sets id.
+     *
+     * @param int $id
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}

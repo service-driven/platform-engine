@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'Zend\Form',
+    'Zend\Cache',
+    'Zend\InputFilter',
+    'Zend\Paginator',
+    'Zend\Router',
+    'Zend\Validator',
+    'ZF\ApiProblem',
+    'ZF\ContentNegotiation',
+    'ZF\Hal',
+    'ZF\Rest',
+    'Zend\Filter',
+    'Zend\ServiceManager\Di',
+    'Zend\Session',
+    'Zend\Mvc\Console',
+    'Zend\Log',
+    'Zend\Db',
+    'ZendDeveloperTools',
+    'Zend\Mvc\I18n',
+    'Zend\Navigation',
+
+    'Nodes',
+    'Application',
+    'Authentication',
+    'Data',
+    'Networking',
+    'Vision',
+    'Schema',
+
+    'DoctrineModule',
+    'Phpro\DoctrineHydrationModule',
+    'DoctrineORMModule',
+];

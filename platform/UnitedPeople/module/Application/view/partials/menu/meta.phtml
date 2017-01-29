@@ -1,0 +1,35 @@
+<?php
+/** @var \Zend\Navigation\Page\Mvc $page */
+/** @var \Zend\Navigation\Page\Mvc $subPage */
+?>
+<ul class="pull-right h-menu">
+    <?php foreach ($this->container as $page): ?>
+        <?php if ($this->navigation()->accept($page)): ?>
+            <?php if ($page->hasPages()): ?>
+                <li class="dropdown hm-profile">
+                    <a href="<?php echo $page->getHref(); ?>" data-toggle="dropdown" style="color:#fff;text-align: right; display:block;">
+                        <?php echo $page->getLabel(); ?>
+                    </a>
+
+                    <ul class="dropdown-menu pull-right dm-icon">
+                        <?php foreach ($page->getPages() as $subPage): ?>
+                            <li>
+                                <a href="<?php echo $subPage->getHref(); ?>">
+                                    <i class="<?php echo $subPage->get('icon'); ?>"></i>
+                                    <?php echo $subPage->getLabel(); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php else: ?>
+                <li class="hm-profile">
+                    <a href="<?php echo $page->getHref(); ?>" style="color:#fff;text-align: right; display:block;">
+                        <?php echo $page->getLabel(); ?>
+                    </a>
+                </li>
+            <?php endif; ?>
+        <?php endif; ?>
+
+    <?php endforeach; ?>
+</ul>

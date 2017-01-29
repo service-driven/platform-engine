@@ -1,0 +1,29 @@
+<?php
+/** @var \Zend\Navigation\Page\Mvc $page */
+/** @var \Zend\Navigation\Page\Mvc $subPage */
+?>
+<ul class="main-menu">
+    <?php foreach ($this->container as $page): ?>
+        <?php if ($this->navigation()->accept($page)): ?>
+            <?php if ($page->hasPages()): ?>
+                <li class="sub-menu <?php echo $page->isActive(true) ? ' toggled': ''; ?>">
+                    <a href="#" data-ma-action="submenu-toggle">
+                        <i class="<?php echo $page->get('icon'); ?>"></i> <?php echo $page->getLabel(); ?>
+                    </a>
+                    <ul style="display: <?php echo $page->isActive(true) ? ' block': ' none'; ?>">
+                        <?php foreach ($page->getPages() as $subPage): ?>
+                            <li class="<?php echo $subPage->isActive() ? 'active': ''; ?>">
+                                <a href="<?php echo $subPage->getHref(); ?>"><?php echo $subPage->getLabel(); ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php else: ?>
+                <li class="<?php echo $page->isActive() ? 'active': ''; ?>">
+                    <a href="<?php echo $page->getHref(); ?>"><?php echo $page->getLabel(); ?></a>
+                </li>
+            <?php endif; ?>
+        <?php endif; ?>
+
+    <?php endforeach; ?>
+</ul>

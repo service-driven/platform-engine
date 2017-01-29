@@ -1,0 +1,4 @@
+========================================================================================================================
+2016-11-02T15:58:02+00:00 WARN (4):  PHP Error in file : /var/www/app/module/Networking/view/networking/person/index.phtml at line : 46
+    with type error : E_WARNING : Invalid argument supplied for foreach() in /networking/people
+

@@ -1,0 +1,26 @@
+{
+  "name": "redis-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/event-driven/redis-platform.git"
+  },
+  "author": "Tobias Oberrauch <tob@event-driven.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/event-driven/redis-platform/issues"
+  },
+  "homepage": "https://github.com/event-driven/redis-platform#readme",
+  "dependencies": {
+    "buffer-equal": "^1.0.0",
+    "int64-native": "^0.4.0",
+    "lzfjs": "^1.0.1",
+    "nan": "^2.5.0",
+    "stream-parser": "^0.3.1"
+  }
+}

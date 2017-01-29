@@ -1,0 +1,66 @@
+<?php
+/** @var Networking\Entity\Person[] $people */
+$people = $this->people;
+?>
+<div class="container">
+    <div class="c-header">
+        <h2><?php echo $this->header; ?></h2>
+    </div>
+
+    <div class="card">
+        <div class="action-header palette-Light-Blue-400 bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">Some text here</div>
+
+            <div class="ah-search">
+                <input type="text" placeholder="Start typing..." class="ahs-input">
+
+                <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+            </div>
+
+            <ul class="ah-actions actions a-alt">
+                <li>
+                    <a href class="ah-search-trigger" data-ma-action="ah-search-open">
+                        <i class="zmdi zmdi-search"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href data-toggle="dropdown" aria-expanded="true">
+                        <i class="zmdi zmdi-more-vert"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="">Refresh</a>
+                        </li>
+                        <li>
+                            <a href="">Listview Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body card-padding">
+            <div class="contacts clearfix row">
+                <?php foreach ($people as $person): ?>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="c-item">
+                        <a href="" class="ci-avatar">
+                            <img src="<?php echo $person->getImage()->getContentUrl(); ?>" alt="">
+                        </a>
+
+                        <div class="c-info">
+                            <strong><?php $person->getGivenName(); ?> <?php $person->getName(); ?></strong>
+                            <small><?php echo $person->getEmail(); ?></small>
+                        </div>
+
+                        <div class="c-footer">
+                            <button class="waves-effect"><i class="zmdi zmdi-person-add"></i> Aktion</button>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>

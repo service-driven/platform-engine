@@ -1,0 +1,61 @@
+{
+    "CacheSubnetGroups": [
+        {
+            "VpcId": "vpc-76c7bf1f", 
+            "CacheSubnetGroupDescription": "Default CacheSubnetGroup", 
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-3f522444", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1b"
+                    }
+                }, 
+                {
+                    "SubnetIdentifier": "subnet-049fcc6d", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1a"
+                    }
+                }
+            ], 
+            "CacheSubnetGroupName": "default"
+        }, 
+        {
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheSubnetGroupDescription": "Subnet for ElastiCache instance", 
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-7c93cf15", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1a"
+                    }
+                }, 
+                {
+                    "SubnetIdentifier": "subnet-e8512293", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1b"
+                    }
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-sensu-13ivg0kpyx3nm"
+        }, 
+        {
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheSubnetGroupDescription": "Subnet for ElastiCache instance", 
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-7c93cf15", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1a"
+                    }
+                }, 
+                {
+                    "SubnetIdentifier": "subnet-e8512293", 
+                    "SubnetAvailabilityZone": {
+                        "Name": "eu-central-1b"
+                    }
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm"
+        }
+    ]
+}

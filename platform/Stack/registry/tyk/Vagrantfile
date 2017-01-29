@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.hostname = "tyk.local"
+  config.vm.network "private_network", ip: "192.168.33.10"
+	config.vm.synced_folder ".", "/var/www"
+
+  config.hostmanager.enabled = true
+	config.hostmanager.manage_host = true
+	config.hostmanager.manage_guest = true
+	config.hostmanager.ignore_private_ip = false
+	config.hostmanager.include_offline = true
+
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
+
+  config.vm.provider "virtualbox" do |virtualbox|
+  	virtualbox.gui = true
+  	virtualbox.memory = "1024"
+  end
+
+	config.vm.provision "shell", path: "bootstrap.sh"
+end

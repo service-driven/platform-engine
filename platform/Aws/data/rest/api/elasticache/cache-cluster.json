@@ -1,0 +1,45 @@
+{
+    "CacheClusters": [
+        {
+            "Engine": "redis", 
+            "CacheNodes": [
+                {
+                    "CacheNodeId": "0001", 
+                    "Endpoint": {
+                        "Port": 6379, 
+                        "Address": "desgc0u7pm450i1-001.i0yfsc.0001.euc1.cache.amazonaws.com"
+                    }, 
+                    "CacheNodeStatus": "available", 
+                    "ParameterGroupStatus": "in-sync", 
+                    "CacheNodeCreateTime": "2016-09-07T12:42:46.577Z", 
+                    "CustomerAvailabilityZone": "eu-central-1b"
+                }
+            ], 
+            "CacheParameterGroup": {
+                "CacheNodeIdsToReboot": [], 
+                "CacheParameterGroupName": "default.redis2.8", 
+                "ParameterApplyStatus": "in-sync"
+            }, 
+            "CacheClusterId": "desgc0u7pm450i1-001", 
+            "CacheSecurityGroups": [], 
+            "NumCacheNodes": 1, 
+            "CacheClusterCreateTime": "2016-09-07T12:42:46.577Z", 
+            "ReplicationGroupId": "desgc0u7pm450i1", 
+            "AutoMinorVersionUpgrade": false, 
+            "CacheClusterStatus": "available", 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:", 
+            "SecurityGroups": [
+                {
+                    "Status": "active", 
+                    "SecurityGroupId": "sg-6b1a8003"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-sensu-13ivg0kpyx3nm", 
+            "EngineVersion": "2.8.24", 
+            "PendingModifiedValues": {}, 
+            "PreferredMaintenanceWindow": "thu:04:30-thu:05:30", 
+            "CacheNodeType": "cache.t2.micro"
+        }
+    ]
+}

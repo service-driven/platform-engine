@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+    config.vm.box = "trusty64"
+    config.vm.box_url = "https://oss-binaries.phusionpassenger.com/vagrant/boxes/latest/ubuntu-14.04-amd64-vbox.box"
+    config.vm.boot_timeout = 600
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 2048
+    end
+
+    config.vm.define :ug do |ug|
+        ug.vm.host_name = "ug"
+        ug.vm.network "private_network", ip: "10.1.1.161"
+        ug.vm.provision :shell, inline: "/vagrant/bootstrap.sh \"10.1.1.161\" "
+    end
+
+end

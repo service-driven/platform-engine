@@ -1,0 +1,45 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = '2'
+CONFIG_PWD = Dir.pwd
+CONFIG_CWD = File.dirname(__FILE__)
+CONFIG_MACHINE = JSON.parse(File.read(File.join(CONFIG_CWD, 'vm', 'config.json')))
+
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  if defined? VagrantPlugins::VagrantVbguest
+    config.vbguest.auto_update = true
+    config.vbguest.auto_reboot = true
+  end
+
+  if defined? VagrantPlugins::HostManager
+    config.hostmanager.enabled = true
+    config.hostmanager.manage_host = true
+    config.hostmanager.manage_guest = true
+    config.hostmanager.ignore_private_ip = false
+    config.hostmanager.include_offline = true
+    config.hostmanager.remove_on_suspend = true
+    config.hostmanager.aliases = %w(unitedpeople)
+  end
+
+  config.vm.define "web" do |web|
+    web.vm.box = 'ubuntu/xenial64'
+    web.vm.hostname = CONFIG_MACHINE['name']
+    web.vm.network "private_network", ip: CONFIG_MACHINE['ip']
+    web.vm.synced_folder ".", "/var/www/app"
+    web.vm.provision "shell", path: "vm/scripts/bootstrap.sh"
+
+    web.vm.provider "virtualbox" do |virtualbox|
+      virtualbox.cpus = 4
+      virtualbox.memory = 2048
+      virtualbox.customize ["modifyvm", :id, "--ioapic", "on"]
+      virtualbox.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+      virtualbox.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
+      virtualbox.customize ["modifyvm", :id, "--name", CONFIG_MACHINE['name']]
+      virtualbox.customize ["modifyvm", :id, "--memory", CONFIG_MACHINE['memory']]
+      virtualbox.customize ["modifyvm", :id, "--cpus", CONFIG_MACHINE['cpus']]
+    end
+  end
+
+end

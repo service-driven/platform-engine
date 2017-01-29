@@ -1,0 +1,80 @@
+{
+    "ReplicationGroups": [
+        {
+            "Status": "available", 
+            "Description": "CACHE-GROUP", 
+            "NodeGroups": [
+                {
+                    "Status": "available", 
+                    "NodeGroupMembers": [
+                        {
+                            "CurrentRole": "primary", 
+                            "PreferredAvailabilityZone": "eu-central-1b", 
+                            "CacheNodeId": "0001", 
+                            "ReadEndpoint": {
+                                "Port": 6379, 
+                                "Address": "desgc0u7pm450i1-001.i0yfsc.0001.euc1.cache.amazonaws.com"
+                            }, 
+                            "CacheClusterId": "desgc0u7pm450i1-001"
+                        }
+                    ], 
+                    "NodeGroupId": "0001", 
+                    "PrimaryEndpoint": {
+                        "Port": 6379, 
+                        "Address": "desgc0u7pm450i1.i0yfsc.ng.0001.euc1.cache.amazonaws.com"
+                    }
+                }
+            ], 
+            "ReplicationGroupId": "desgc0u7pm450i1", 
+            "AutomaticFailover": "disabled", 
+            "MemberClusters": [
+                "desgc0u7pm450i1-001"
+            ], 
+            "PendingModifiedValues": {}
+        }, 
+        {
+            "Status": "available", 
+            "Description": "CACHE-GROUP", 
+            "NodeGroups": [
+                {
+                    "Status": "available", 
+                    "NodeGroupMembers": [
+                        {
+                            "CurrentRole": "primary", 
+                            "PreferredAvailabilityZone": "eu-central-1a", 
+                            "CacheNodeId": "0001", 
+                            "ReadEndpoint": {
+                                "Port": 6379, 
+                                "Address": "desiw9ox0uhmjoc-001.i0yfsc.0001.euc1.cache.amazonaws.com"
+                            }, 
+                            "CacheClusterId": "desiw9ox0uhmjoc-001"
+                        }, 
+                        {
+                            "CurrentRole": "replica", 
+                            "PreferredAvailabilityZone": "eu-central-1b", 
+                            "CacheNodeId": "0001", 
+                            "ReadEndpoint": {
+                                "Port": 6379, 
+                                "Address": "desiw9ox0uhmjoc-002.i0yfsc.0001.euc1.cache.amazonaws.com"
+                            }, 
+                            "CacheClusterId": "desiw9ox0uhmjoc-002"
+                        }
+                    ], 
+                    "NodeGroupId": "0001", 
+                    "PrimaryEndpoint": {
+                        "Port": 6379, 
+                        "Address": "desiw9ox0uhmjoc.i0yfsc.ng.0001.euc1.cache.amazonaws.com"
+                    }
+                }
+            ], 
+            "ReplicationGroupId": "desiw9ox0uhmjoc", 
+            "AutomaticFailover": "enabled", 
+            "SnapshottingClusterId": "desiw9ox0uhmjoc-002", 
+            "MemberClusters": [
+                "desiw9ox0uhmjoc-001", 
+                "desiw9ox0uhmjoc-002"
+            ], 
+            "PendingModifiedValues": {}
+        }
+    ]
+}

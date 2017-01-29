@@ -1,0 +1,708 @@
+2016-10-26 14:53:40,869 - INFO  - BaasBox is starting... 
+2016-10-26 14:53:40,879 - INFO  - ...Loading Play plugin... 
+2016-10-26 14:53:40,880 - INFO  - System details: 
+2016-10-26 14:53:40,934 - INFO  - {os_name=Mac OS X, os_arch=x86_64, os_version=10.12, processors=8} 
+2016-10-26 14:53:40,934 - INFO  - {max_allocable_memory=3817865216, current_allocate_memory=198180864, used_memory_in_the_allocate_memory=27501904, free_memory_in_the_allocated_memory=170678960} 
+2016-10-26 14:53:40,935 - INFO  - {java_class_version=52.0, java_vendor=Oracle Corporation, java_vendor_url=http://java.oracle.com/, java_version=1.8.0_101} 
+2016-10-26 14:53:41,550 - DEBUG - application: main  Global.onStart() called 
+2016-10-26 14:53:41,561 - DEBUG - application: main  opening connection on db: db/baasbox for admin 
+2016-10-26 14:53:41,577 - DEBUG - application: main  Registering hooks... 
+2016-10-26 14:53:41,578 - DEBUG - application: main  Registering BaasBox hooks... start 
+2016-10-26 14:53:41,580 - DEBUG - application: main  Registering BaasBox hooks... done 
+2016-10-26 14:53:41,581 - DEBUG - application: main  Hooks: {com.orientechnologies.orient.core.db.record.OClassTrigger@675ffd1d=FIRST, com.orientechnologies.orient.core.metadata.security.ORestrictedAccessHook@56303475=FIRST, com.orientechnologies.orient.core.metadata.security.OUserTrigger@30506c0d=EARLY, com.orientechnologies.orient.core.metadata.function.OFunctionTrigger@1dcca8d3=REGULAR, com.baasbox.db.hook.Audit@51e0301d=REGULAR, com.orientechnologies.orient.core.index.OClassIndexManager@5631962=LAST, com.orientechnologies.orient.core.schedule.OSchedulerTrigger@52a70627=LAST, com.orientechnologies.orient.core.db.record.ridbag.sbtree.ORidBagDeleteHook@6124287a=LAST, com.baasbox.db.hook.HidePassword@1eb6e1c=LAST} 
+2016-10-26 14:53:41,581 - INFO  - Creating default roles... 
+2016-10-26 14:53:41,587 - DEBUG - application: main  creating administrator... 
+2016-10-26 14:53:41,632 - DEBUG - application: main  creating anonymous... 
+2016-10-26 14:53:41,646 - DEBUG - application: main  creating registered... 
+2016-10-26 14:53:41,681 - DEBUG - application: main  creating backoffice... 
+2016-10-26 14:53:41,687 - DEBUG - application: main  creating reader... 
+2016-10-26 14:53:41,692 - DEBUG - application: main  creating writer... 
+2016-10-26 14:53:41,701 - DEBUG - application: main  creating admin... 
+2016-10-26 14:53:41,744 - INFO  - Populating the db... 
+2016-10-26 14:53:41,752 - DEBUG - application: main  --database settings 
+2016-10-26 14:53:41,752 - DEBUG - application: main  alter database DATETIMEFORMAT yyyy-MM-dd'T'HH:mm:ss.SSSZ 
+2016-10-26 14:53:41,756 - DEBUG - application: main  alter database custom useLightweightEdges=false 
+2016-10-26 14:53:41,758 - DEBUG - application: main  alter database custom useClassForEdgeLabel=false 
+2016-10-26 14:53:41,759 - DEBUG - application: main  alter database custom useClassForVertexLabel=true 
+2016-10-26 14:53:41,759 - DEBUG - application: main  alter database custom useVertexFieldsForEdgeLabels=true 
+2016-10-26 14:53:41,760 - DEBUG - application: main   
+2016-10-26 14:53:41,760 - DEBUG - application: main  --classes 
+2016-10-26 14:53:41,761 - DEBUG - application: main   
+2016-10-26 14:53:41,761 - DEBUG - application: main   
+2016-10-26 14:53:41,761 - DEBUG - application: main  --Node 
+2016-10-26 14:53:41,761 - DEBUG - application: main  create class _BB_NodeVertex extends V; 
+2016-10-26 14:53:41,791 - DEBUG - application: main   
+2016-10-26 14:53:41,792 - DEBUG - application: main  --Node class should be abstract but we cannot declare it as abstrat due the index on the id field 
+2016-10-26 14:53:41,792 - DEBUG - application: main  create class _BB_Node  extends ORestricted; 
+2016-10-26 14:53:41,825 - DEBUG - application: main  create property _BB_NodeVertex._node link _BB_Node; 
+2016-10-26 14:53:41,833 - DEBUG - application: main  create property _BB_Node._creation_date datetime; 
+2016-10-26 14:53:41,842 - DEBUG - application: main  create property _BB_Node._links link _BB_NodeVertex; 
+2016-10-26 14:53:41,859 - DEBUG - application: main  create property _BB_Node.id String; 
+2016-10-26 14:53:41,865 - DEBUG - application: main  create property _BB_Node._author String; 
+2016-10-26 14:53:41,882 - DEBUG - application: main   
+2016-10-26 14:53:41,883 - DEBUG - application: main   
+2016-10-26 14:53:41,883 - DEBUG - application: main  --user 
+2016-10-26 14:53:41,885 - DEBUG - application: main  create class _BB_User extends _BB_Node; 
+2016-10-26 14:53:41,935 - DEBUG - application: main  create class _BB_UserAttributes extends ORestricted; 
+2016-10-26 14:53:41,965 - DEBUG - application: main  create property _BB_User.visibleByAnonymousUsers link _BB_UserAttributes; 
+2016-10-26 14:53:41,969 - DEBUG - application: main  create property _BB_User.visibleByRegisteredUsers link _BB_UserAttributes; 
+2016-10-26 14:53:41,975 - DEBUG - application: main  create property _BB_User.visibleByFriend link _BB_UserAttributes; 
+2016-10-26 14:53:41,988 - DEBUG - application: main  create property _BB_User.visibleByTheUser link _BB_UserAttributes; 
+2016-10-26 14:53:41,993 - DEBUG - application: main  create property _BB_User._audit embedded; 
+2016-10-26 14:53:42,003 - DEBUG - application: main  create property _BB_User.user link ouser; 
+2016-10-26 14:53:42,015 - DEBUG - application: main  -- issue 447 - Restrict signup to 1 account per email 
+2016-10-26 14:53:42,016 - DEBUG - application: main  create property _bb_userattributes.email string; 
+2016-10-26 14:53:42,030 - DEBUG - application: main  --the enforcement of the uniqueness of registration email is performed by the code due the fact that there could be email fields in other profile sections 
+2016-10-26 14:53:42,031 - DEBUG - application: main  create index _bb_userattributes.email notunique; 
+2016-10-26 14:53:42,072 - DEBUG - application: main   
+2016-10-26 14:53:42,073 - DEBUG - application: main  --delete OrientDB default users 
+2016-10-26 14:53:42,080 - DEBUG - application: main  delete from OUser where name in ['reader','writer']; 
+2016-10-26 14:53:42,096 - DEBUG - application: main   
+2016-10-26 14:53:42,096 - DEBUG - application: main  --admin user 
+2016-10-26 14:53:42,096 - DEBUG - application: main  insert into _BB_User set user = (select from ouser where name='admin'), _links = (insert into _BB_NodeVertex set _node=null), _creation_date = sysdate(), signUpDate = sysdate(); 
+2016-10-26 14:53:42,223 - DEBUG - application: main    AuditHook.onRecordBeforeCreate: creation of audit fields for document #13:-1 
+2016-10-26 14:53:42,228 - DEBUG - application: main  update _BB_NodeVertex set _node=(select from _BB_User where user.name='admin'); 
+2016-10-26 14:53:42,287 - DEBUG - application: main    
+2016-10-26 14:53:42,290 - DEBUG - application: main  --reset pwd 
+2016-10-26 14:53:42,290 - DEBUG - application: main  create class _BB_ResetPwd; 
+2016-10-26 14:53:42,368 - DEBUG - application: main   
+2016-10-26 14:53:42,369 - DEBUG - application: main  --users' constraints 
+2016-10-26 14:53:42,369 - DEBUG - application: main  alter property _BB_NodeVertex._node mandatory=true; 
+2016-10-26 14:53:42,377 - DEBUG - application: main  alter property _BB_NodeVertex._node notnull=true; 
+2016-10-26 14:53:42,383 - DEBUG - application: main  alter property _BB_Node._creation_date mandatory=true; 
+2016-10-26 14:53:42,389 - DEBUG - application: main  alter property _BB_Node._creation_date notnull=true; 
+2016-10-26 14:53:42,401 - DEBUG - application: main  alter property _BB_User.user mandatory=true; 
+2016-10-26 14:53:42,408 - DEBUG - application: main  alter property _BB_User.user notnull=true; 
+2016-10-26 14:53:42,415 - DEBUG - application: main  alter property _BB_Node._links mandatory=true; 
+2016-10-26 14:53:42,422 - DEBUG - application: main  alter property _BB_Node._links notnull=true; 
+2016-10-26 14:53:42,432 - DEBUG - application: main   
+2016-10-26 14:53:42,432 - DEBUG - application: main  --object storage 
+2016-10-26 14:53:42,432 - DEBUG - application: main  create class _BB_Collection extends _BB_Node; 
+2016-10-26 14:53:42,464 - DEBUG - application: main  create property _BB_Collection.name String; 
+2016-10-26 14:53:42,468 - DEBUG - application: main  alter property _BB_Collection.name mandatory=true; 
+2016-10-26 14:53:42,472 - DEBUG - application: main  alter property _BB_Collection.name notnull=true; 
+2016-10-26 14:53:42,477 - DEBUG - application: main   
+2016-10-26 14:53:42,477 - DEBUG - application: main  --files 
+2016-10-26 14:53:42,477 - DEBUG - application: main  create class _BB_File extends _BB_Node; 
+2016-10-26 14:53:42,523 - DEBUG - application: main  create property _BB_File.fileName String; 
+2016-10-26 14:53:42,529 - DEBUG - application: main  alter property _BB_File.fileName mandatory=true; 
+2016-10-26 14:53:42,536 - DEBUG - application: main  alter property _BB_File.fileName notnull=true; 
+2016-10-26 14:53:42,541 - DEBUG - application: main  create property _BB_File.contentType String; 
+2016-10-26 14:53:42,547 - DEBUG - application: main  alter property _BB_File.contentType mandatory=true; 
+2016-10-26 14:53:42,554 - DEBUG - application: main  alter property _BB_File.contentType notnull=true; 
+2016-10-26 14:53:42,565 - DEBUG - application: main  create property _BB_File.contentLength long; 
+2016-10-26 14:53:42,570 - DEBUG - application: main  alter property _BB_File.contentLength mandatory=true; 
+2016-10-26 14:53:42,581 - DEBUG - application: main  alter property _BB_File.contentLength notnull=true; 
+2016-10-26 14:53:42,586 - DEBUG - application: main  create property _BB_File.file link; 
+2016-10-26 14:53:42,600 - DEBUG - application: main  alter property _BB_File.file mandatory=true; 
+2016-10-26 14:53:42,621 - DEBUG - application: main  alter property _BB_File.file notnull=true; 
+2016-10-26 14:53:42,637 - DEBUG - application: main   
+2016-10-26 14:53:42,638 - DEBUG - application: main  create class _BB_File_Content; 
+2016-10-26 14:53:42,719 - DEBUG - application: main  create property _BB_File_Content.content String; 
+2016-10-26 14:53:42,728 - DEBUG - application: main  create index _BB_File_Content.content.key FULLTEXT_HASH_INDEX; 
+2016-10-26 14:53:42,950 - DEBUG - application: main   
+2016-10-26 14:53:42,950 - DEBUG - application: main   
+2016-10-26 14:53:42,951 - DEBUG - application: main  --Assets 
+2016-10-26 14:53:42,951 - DEBUG - application: main  create class _BB_Asset extends _BB_Node; 
+2016-10-26 14:53:42,973 - DEBUG - application: main  create class _BB_FileAsset extends _BB_Asset; 
+2016-10-26 14:53:42,987 - DEBUG - application: main  create property _BB_Asset.name String; 
+2016-10-26 14:53:42,989 - DEBUG - application: main  alter property _BB_Asset.name mandatory=true; 
+2016-10-26 14:53:42,992 - DEBUG - application: main  alter property _BB_Asset.name notnull=true; 
+2016-10-26 14:53:42,994 - DEBUG - application: main  create property _BB_FileAsset.fileName String; 
+2016-10-26 14:53:42,997 - DEBUG - application: main  alter property _BB_FileAsset.fileName mandatory=true; 
+2016-10-26 14:53:43,003 - DEBUG - application: main  alter property _BB_FileAsset.fileName notnull=true; 
+2016-10-26 14:53:43,007 - DEBUG - application: main  create property _BB_FileAsset.contentType String; 
+2016-10-26 14:53:43,009 - DEBUG - application: main  alter property _BB_FileAsset.contentType mandatory=true; 
+2016-10-26 14:53:43,012 - DEBUG - application: main  alter property _BB_FileAsset.contentType notnull=true; 
+2016-10-26 14:53:43,018 - DEBUG - application: main  create property _BB_FileAsset.contentLength long; 
+2016-10-26 14:53:43,021 - DEBUG - application: main  alter property _BB_FileAsset.contentLength mandatory=true; 
+2016-10-26 14:53:43,027 - DEBUG - application: main  alter property _BB_FileAsset.contentLength notnull=true; 
+2016-10-26 14:53:43,041 - DEBUG - application: main  create property _BB_FileAsset.file link; 
+2016-10-26 14:53:43,070 - DEBUG - application: main  alter property _BB_FileAsset.file mandatory=true; 
+2016-10-26 14:53:43,076 - DEBUG - application: main  alter property _BB_FileAsset.file notnull=true; 
+2016-10-26 14:53:43,080 - DEBUG - application: main   
+2016-10-26 14:53:43,081 - DEBUG - application: main  --permissions 
+2016-10-26 14:53:43,081 - DEBUG - application: main  create class _BB_Permissions; 
+2016-10-26 14:53:43,108 - DEBUG - application: main  create property _BB_Permissions.tag String; 
+2016-10-26 14:53:43,114 - DEBUG - application: main  create property _BB_Permissions.enabled boolean; 
+2016-10-26 14:53:43,123 - DEBUG - application: main  alter property _BB_Permissions.tag mandatory=true; 
+2016-10-26 14:53:43,126 - DEBUG - application: main  alter property _BB_Permissions.tag notnull=true; 
+2016-10-26 14:53:43,130 - DEBUG - application: main  alter property _BB_Permissions.enabled mandatory=true; 
+2016-10-26 14:53:43,134 - DEBUG - application: main  alter property _BB_Permissions.enabled notnull=true; 
+2016-10-26 14:53:43,140 - DEBUG - application: main   
+2016-10-26 14:53:43,140 - DEBUG - application: main  create property orole.isrole boolean 
+2016-10-26 14:53:43,146 - DEBUG - application: main  update orole set isrole=true 
+2016-10-26 14:53:43,153 - DEBUG - application: main   
+2016-10-26 14:53:43,153 - DEBUG - application: main  --indices 
+2016-10-26 14:53:43,153 - DEBUG - application: main   
+2016-10-26 14:53:43,153 - DEBUG - application: main  alter property ouser.name collate ci; 
+2016-10-26 14:53:43,155 - DEBUG - application: main  create index _BB_Collection.name UNIQUE_HASH_INDEX; 
+2016-10-26 14:53:43,286 - DEBUG - application: main  create index _BB_asset.name unique; 
+2016-10-26 14:53:43,297 - DEBUG - application: main  create index _BB_Node.id UNIQUE_HASH_INDEX; 
+2016-10-26 14:53:43,395 - DEBUG - application: main  create index _BB_Permissions.tag UNIQUE_HASH_INDEX; 
+2016-10-26 14:53:43,484 - DEBUG - application: main  ---bug on OrientDB index? (our issue #412) We have to define a "new" index to avoid class scan when looking for a username: 
+2016-10-26 14:53:43,484 - DEBUG - application: main   
+2016-10-26 14:53:43,484 - DEBUG - application: main  create index _bb_user.user.name unique; 
+2016-10-26 14:53:43,493 - DEBUG - application: main  create index _bb_node._author notunique; 
+2016-10-26 14:53:43,503 - DEBUG - application: main  create index _bb_node._creation_date notunique; 
+2016-10-26 14:53:43,544 - DEBUG - application: main   
+2016-10-26 14:53:43,544 - DEBUG - application: main  --configuration class 
+2016-10-26 14:53:43,545 - DEBUG - application: main  create class _BB_Index; 
+2016-10-26 14:53:43,600 - DEBUG - application: main  create property _BB_Index.key String; 
+2016-10-26 14:53:43,603 - DEBUG - application: main  alter property _BB_Index.key mandatory=true; 
+2016-10-26 14:53:43,606 - DEBUG - application: main  alter property _BB_Index.key notnull=true; 
+2016-10-26 14:53:43,611 - DEBUG - application: main  create index _BB_Index.key unique; 
+2016-10-26 14:53:43,637 - DEBUG - application: main   
+2016-10-26 14:53:43,637 - DEBUG - application: main  --LINKS 
+2016-10-26 14:53:43,637 - DEBUG - application: main  create property E.id String; 
+2016-10-26 14:53:43,641 - DEBUG - application: main  alter property E.id notnull=true; 
+2016-10-26 14:53:43,644 - DEBUG - application: main  create index E.id UNIQUE_HASH_INDEX; 
+2016-10-26 14:53:43,770 - DEBUG - application: main   
+2016-10-26 14:53:43,770 - DEBUG - application: main  --Scripts 
+2016-10-26 14:53:43,770 - DEBUG - application: main  create class _BB_Script; 
+2016-10-26 14:53:43,790 - DEBUG - application: main  create property _BB_Script.name String; 
+2016-10-26 14:53:43,794 - DEBUG - application: main  alter property _BB_Script.name mandatory=true; 
+2016-10-26 14:53:43,799 - DEBUG - application: main  alter property _BB_Script.name notnull=true; 
+2016-10-26 14:53:43,803 - DEBUG - application: main  create property _BB_Script.code embeddedlist string; 
+2016-10-26 14:53:43,806 - DEBUG - application: main  alter property _BB_Script.code mandatory=true; 
+2016-10-26 14:53:43,809 - DEBUG - application: main  alter property _BB_Script.code notnull=true; 
+2016-10-26 14:53:43,815 - DEBUG - application: main  create property _BB_Script.lang string; 
+2016-10-26 14:53:43,825 - DEBUG - application: main  alter property _BB_Script.lang mandatory=true; 
+2016-10-26 14:53:43,830 - DEBUG - application: main  alter property _BB_Script.lang notnull=true; 
+2016-10-26 14:53:43,835 - DEBUG - application: main  create property _BB_Script.library boolean; 
+2016-10-26 14:53:43,841 - DEBUG - application: main  alter property _BB_Script.library mandatory=true; 
+2016-10-26 14:53:43,846 - DEBUG - application: main  alter property _BB_Script.library notnull=true; 
+2016-10-26 14:53:43,848 - DEBUG - application: main  create property _BB_Script.active boolean; 
+2016-10-26 14:53:43,850 - DEBUG - application: main  alter property _BB_Script.active mandatory=true; 
+2016-10-26 14:53:43,853 - DEBUG - application: main  alter property _BB_Script.active notnull=true; 
+2016-10-26 14:53:43,857 - DEBUG - application: main  create property _BB_Script._storage embedded; 
+2016-10-26 14:53:43,866 - DEBUG - application: main  create property _BB_Script._creation_date datetime; 
+2016-10-26 14:53:43,868 - DEBUG - application: main  create property _BB_Script._invalid boolean; 
+2016-10-26 14:53:43,872 - DEBUG - application: main  alter property _BB_Script._invalid mandatory=true; 
+2016-10-26 14:53:43,874 - DEBUG - application: main  alter property _BB_Script._invalid notnull=true; 
+2016-10-26 14:53:43,875 - DEBUG - application: main  create index _BB_Script.name unique; 
+2016-10-26 14:53:43,924 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:43,924 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:43,924 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_INTERNAL:db.version], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:43,924 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:43,949 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:43,949 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:43,949 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_INTERNAL:installation.id], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:43,949 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:43,950 - INFO  - Unique installation id is: M2ExOWYwODAtOWI3Yi0xMWU2LTgzOTQtNTZhNmRjYmQ0NTU5 
+2016-10-26 14:53:43,950 - INFO  - ...done 
+2016-10-26 14:53:43,970 - INFO  - Creating default users... 
+2016-10-26 14:53:43,991 - DEBUG - application: main  Request Transaction: transaction count -before-: 0 
+2016-10-26 14:53:43,994 - DEBUG - application: main  Request Transaction: transaction count -after-: 1 
+2016-10-26 14:53:44,007 - DEBUG - application: main    AuditHook.onRecordBeforeCreate: creation of audit fields for document #-1:-1 
+2016-10-26 14:53:44,021 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,024 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,025 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,025 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,026 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,026 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,026 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,026 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,026 - DEBUG - application: main  Commit Transaction: transaction count -before-: 1 
+2016-10-26 14:53:44,026 - DEBUG - application: main  Commit transaction 
+2016-10-26 14:53:44,029 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,030 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,045 - DEBUG - application: main  Commit Transaction: transaction count -after-: 0 
+2016-10-26 14:53:44,046 - DEBUG - application: main  Request Transaction: transaction count -before-: 0 
+2016-10-26 14:53:44,046 - DEBUG - application: main  Request Transaction: transaction count -after-: 1 
+2016-10-26 14:53:44,048 - DEBUG - application: main    AuditHook.onRecordBeforeCreate: creation of audit fields for document #-1:-1 
+2016-10-26 14:53:44,055 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,055 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,056 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,057 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,057 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,058 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,058 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,058 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,058 - DEBUG - application: main  Commit Transaction: transaction count -before-: 1 
+2016-10-26 14:53:44,058 - DEBUG - application: main  Commit transaction 
+2016-10-26 14:53:44,060 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord:#13:-4  
+2016-10-26 14:53:44,060 - DEBUG - application: main    AuditHook.onRecordBeforeUpdate: update of audit fields for ORecord: #13:-4 done. 
+2016-10-26 14:53:44,066 - DEBUG - application: main  Commit Transaction: transaction count -after-: 0 
+2016-10-26 14:53:44,071 - INFO  - Load initial configuration... 
+2016-10-26 14:53:44,169 - INFO  - Setting BaasBox to application.name 
+2016-10-26 14:53:44,171 - DEBUG - application: main  New setting value, key: application.name, type: class java.lang.String, new value: BaasBox 
+2016-10-26 14:53:44,171 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,172 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,172 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:application.name], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,172 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,173 - INFO  - Setting 0 to session_tokens.timeout 
+2016-10-26 14:53:44,173 - DEBUG - application: main  New setting value, key: session_tokens.timeout, type: class java.lang.Integer, new value: 0 
+2016-10-26 14:53:44,173 - DEBUG - application: main  getting session_tokens.timeout from index 
+2016-10-26 14:53:44,173 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,173 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,173 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:session_tokens.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,174 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,177 - DEBUG - application: main  New session timeout: 0 ms 
+2016-10-26 14:53:44,567 - INFO  - Starting application default Akka system. 
+2016-10-26 14:53:44,575 - DEBUG - application: main  New session timeout: 0 ms 
+2016-10-26 14:53:44,575 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,576 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,576 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:session_tokens.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,576 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,583 - INFO  - Setting false to network.http.ssl 
+2016-10-26 14:53:44,583 - DEBUG - application: main  New setting value, key: network.http.ssl, type: class java.lang.Boolean, new value: false 
+2016-10-26 14:53:44,584 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,584 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,584 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:network.http.ssl], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,584 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,588 - INFO  - Setting localhost to network.http.url 
+2016-10-26 14:53:44,588 - DEBUG - application: main  New setting value, key: network.http.url, type: class java.lang.String, new value: localhost 
+2016-10-26 14:53:44,588 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,622 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,622 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:network.http.url], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,622 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,624 - INFO  - Setting 9000 to network.http.port 
+2016-10-26 14:53:44,624 - DEBUG - application: main  New setting value, key: network.http.port, type: class java.lang.Integer, new value: 9000 
+2016-10-26 14:53:44,624 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,624 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,624 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:network.http.port], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,624 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,626 - INFO  - Setting mail.example.com to network.smtp.host 
+2016-10-26 14:53:44,627 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,627 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,627 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.host], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,627 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,628 - INFO  - Setting 25 to network.smtp.port 
+2016-10-26 14:53:44,629 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,629 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,629 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.port], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,629 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,646 - INFO  - Setting false to network.smtp.ssl 
+2016-10-26 14:53:44,647 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,648 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,648 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.ssl], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,648 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,649 - INFO  - Setting false to network.smtp.tls 
+2016-10-26 14:53:44,650 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,650 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,650 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.tls], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,650 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,651 - INFO  - Setting true to network.smtp.authentication 
+2016-10-26 14:53:44,651 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,651 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,651 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.authentication], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,651 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,652 - INFO  - Setting example to network.smtp.user 
+2016-10-26 14:53:44,653 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,653 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,653 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.user], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,653 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,654 - INFO  - Setting password to network.smtp.password 
+2016-10-26 14:53:44,654 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,654 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,654 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:network.smtp.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,655 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,655 - INFO  - Setting info@example.com to email.from 
+2016-10-26 14:53:44,656 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,656 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,656 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:email.from], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,656 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,657 - INFO  - Setting BaasBox: reset password to email.subject 
+2016-10-26 14:53:44,657 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,657 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,657 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:email.subject], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,657 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,658 - INFO  - Setting Hi $user_name$
+we received a request to reset your password because you forgot it. Please follow this link within 15 minutes and you will receive further information about the reset procedure: $link$
+ to email.template.text 
+2016-10-26 14:53:44,659 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,659 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,659 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:email.template.text], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,659 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,660 - INFO  - Setting Hi $user_name$ <br>we received a request to reset your password because you forgot it. Please follow this link within 15 minutes and you will receive further information about the reset procedure: <a href='$link$'>$link$</a> 
+ to email.template.html 
+2016-10-26 14:53:44,661 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,661 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,661 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:email.template.html], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,661 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,661 - INFO  - Setting 15 to email.expiration.time 
+2016-10-26 14:53:44,662 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,662 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,662 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:email.expiration.time], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,662 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,663 - INFO  - Setting <!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>$application_name$ reset password</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' rel='stylesheet'>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+<![endif]-->
+
+<script src='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+<div class='container-fluid'>
+<div class='row-fluid'>
+<div class='span2'>
+</div>
+<div class='span6'>
+<h3 class='text-center text-info'>
+$application_name$ reset password
+</h3>
+<p class='text-info'>
+Hi $user_name$,
+<br />
+please insert your new password twice and click on the <em>Reset Password</em> button.
+</p>
+<p class='text-error'>
+$error$
+</p>
+<form class='form-horizontal' method='post' action='$link$'>
+<div class='control-group'>
+<label class='control-label' for='password'>New Password</label>
+<div class='controls'>
+<input id='password' name='$password$' type='password'>
+</div>
+</div>
+<div class='control-group'>
+<label class='control-label' for='repeat-password'>Repeat the new password</label>
+<div class='controls'>
+<input id='repeat-password' name='$repeat_password$' type='password'>
+</div>
+</div>
+<div class='control-group'>
+<div class='controls'>
+<button type='submit' class='btn'>Reset Password</button>
+</div>
+</div>
+</form>
+</div>
+<div class='span4'>
+</div>
+</div>
+</div>
+</body>
+</html> to page.html.template 
+2016-10-26 14:53:44,665 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,665 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,665 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:page.html.template], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,665 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,667 - INFO  - Setting <!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>$application_name$ reset password</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' rel='stylesheet'>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+<![endif]-->
+
+<script src='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+<div class='container-fluid'>
+<div class='row-fluid'>
+<div class='span2'>
+</div>
+<div class='span6'>
+<h3 class='text-center text-info'>
+$application_name$ reset password
+</h3>
+<p class='text-success'>
+$message$
+</p>
+<p class='text-error'>
+$error$
+</p>
+</div>
+<div class='span4'>
+</div>
+</div>
+</div>
+</body>
+</html> to page.html.feedback.template 
+2016-10-26 14:53:44,667 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,667 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,667 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:page.html.feedback.template], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,668 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,670 - INFO  - Setting true to image.allows.automatic.resize 
+2016-10-26 14:53:44,672 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,672 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,673 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:image.allows.automatic.resize], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,673 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,674 - INFO  - Setting 25% 50% 75% <=80px to image.allowed.automatic.resize.formats 
+2016-10-26 14:53:44,674 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,674 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,675 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:image.allowed.automatic.resize.formats], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,675 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,683 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,683 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,684 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PASSWORD_RECOVERY:image.allowed.automatic.resize.formats], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,684 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,689 - INFO  - Setting false to profile1.push.profile.enable 
+2016-10-26 14:53:44,693 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,693 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,693 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,694 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,696 - DEBUG - application: main  Type:class java.lang.Boolean Setting false of class: class java.lang.String 
+2016-10-26 14:53:44,696 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,696 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,696 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,696 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,698 - INFO  - Setting true to profile1.push.sandbox.enable 
+2016-10-26 14:53:44,698 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,699 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,699 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,699 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,699 - DEBUG - application: main  Type:class java.lang.Boolean Setting true of class: class java.lang.String 
+2016-10-26 14:53:44,700 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,700 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,700 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,700 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,701 - INFO  - Setting 0 to profile1.push.apple.timeout 
+2016-10-26 14:53:44,702 - DEBUG - application: main  Type:class java.lang.Integer Setting 0 of class: class java.lang.String 
+2016-10-26 14:53:44,702 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,702 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,702 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.push.apple.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,709 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,711 - INFO  - Setting  to profile1.sandbox.android.api.key 
+2016-10-26 14:53:44,714 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,714 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,714 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,715 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,715 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,715 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,715 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,715 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,715 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,716 - INFO  - Setting  to profile1.sandbox.ios.certificate.password 
+2016-10-26 14:53:44,717 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,717 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,717 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,717 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.sandbox.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,717 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,718 - INFO  - Setting  to profile1.production.android.api.key 
+2016-10-26 14:53:44,718 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,718 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,718 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,718 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,723 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,724 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,724 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,724 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,724 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,726 - INFO  - Setting  to profile1.production.ios.certificate.password 
+2016-10-26 14:53:44,726 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,726 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,726 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,726 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.production.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,726 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,727 - INFO  - Setting false to profile2.push.profile.enable 
+2016-10-26 14:53:44,727 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,727 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,727 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,727 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,728 - DEBUG - application: main  Type:class java.lang.Boolean Setting false of class: class java.lang.String 
+2016-10-26 14:53:44,728 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,728 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,728 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,728 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,729 - INFO  - Setting true to profile2.push.sandbox.enable 
+2016-10-26 14:53:44,729 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,729 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,729 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,729 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,730 - DEBUG - application: main  Type:class java.lang.Boolean Setting true of class: class java.lang.String 
+2016-10-26 14:53:44,730 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,730 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,730 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,730 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,731 - INFO  - Setting 0 to profile2.push.apple.timeout 
+2016-10-26 14:53:44,731 - DEBUG - application: main  Type:class java.lang.Integer Setting 0 of class: class java.lang.String 
+2016-10-26 14:53:44,731 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,731 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,731 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.push.apple.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,731 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,732 - INFO  - Setting  to profile2.sandbox.android.api.key 
+2016-10-26 14:53:44,733 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,733 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,733 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,733 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,733 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,733 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,733 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,733 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,733 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,734 - INFO  - Setting  to profile2.sandbox.ios.certificate.password 
+2016-10-26 14:53:44,734 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,734 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,735 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,735 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.sandbox.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,735 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,736 - INFO  - Setting  to profile2.production.android.api.key 
+2016-10-26 14:53:44,736 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,736 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,736 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,736 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,736 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,736 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,736 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,736 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,753 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,754 - INFO  - Setting  to profile2.production.ios.certificate.password 
+2016-10-26 14:53:44,754 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,754 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,754 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,754 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.production.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,754 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,755 - INFO  - Setting false to profile3.push.profile.enable 
+2016-10-26 14:53:44,756 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,756 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,756 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,756 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,756 - DEBUG - application: main  Type:class java.lang.Boolean Setting false of class: class java.lang.String 
+2016-10-26 14:53:44,756 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,756 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,756 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.push.profile.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,757 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,757 - INFO  - Setting true to profile3.push.sandbox.enable 
+2016-10-26 14:53:44,758 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,758 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,758 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,758 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,758 - DEBUG - application: main  Type:class java.lang.Boolean Setting true of class: class java.lang.String 
+2016-10-26 14:53:44,759 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,759 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,759 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.push.sandbox.enable], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,760 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,762 - INFO  - Setting 0 to profile3.push.apple.timeout 
+2016-10-26 14:53:44,762 - DEBUG - application: main  Type:class java.lang.Integer Setting 0 of class: class java.lang.String 
+2016-10-26 14:53:44,764 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,764 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,764 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.push.apple.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,765 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,766 - INFO  - Setting  to profile3.sandbox.android.api.key 
+2016-10-26 14:53:44,766 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,766 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,766 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,766 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,767 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,767 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,767 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,782 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.sandbox.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,782 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,785 - INFO  - Setting  to profile3.sandbox.ios.certificate.password 
+2016-10-26 14:53:44,786 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,786 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,786 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,786 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.sandbox.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,786 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,787 - INFO  - Setting  to profile3.production.android.api.key 
+2016-10-26 14:53:44,787 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,787 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,788 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,788 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,788 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,788 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,788 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,788 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.production.android.api.key], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,789 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,790 - INFO  - Setting  to profile3.production.ios.certificate.password 
+2016-10-26 14:53:44,791 - DEBUG - application: main  Type:class java.lang.String Setting  of class: class java.lang.String 
+2016-10-26 14:53:44,791 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,791 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,792 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.production.ios.certificate.password], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,792 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,793 - INFO  - ...done 
+2016-10-26 14:53:44,825 - INFO  - Updating default users passwords... 
+2016-10-26 14:53:44,825 - DEBUG - application: main  opening connection on db: db/baasbox for internal_admin 
+2016-10-26 14:53:44,830 - DEBUG - application: main  Registering hooks... 
+2016-10-26 14:53:44,830 - DEBUG - application: main  Registering BaasBox hooks... start 
+2016-10-26 14:53:44,831 - DEBUG - application: main  Registering BaasBox hooks... done 
+2016-10-26 14:53:44,831 - DEBUG - application: main  Hooks: {com.orientechnologies.orient.core.db.record.OClassTrigger@76563d26=FIRST, com.orientechnologies.orient.core.metadata.security.ORestrictedAccessHook@4ac86d6a=FIRST, com.orientechnologies.orient.core.metadata.security.OUserTrigger@3d904e9c=EARLY, com.orientechnologies.orient.core.metadata.function.OFunctionTrigger@508a65bf=REGULAR, com.baasbox.db.hook.Audit@38d17d80=REGULAR, com.orientechnologies.orient.core.index.OClassIndexManager@17f2dd85=LAST, com.orientechnologies.orient.core.schedule.OSchedulerTrigger@1e58512c=LAST, com.orientechnologies.orient.core.db.record.ridbag.sbtree.ORidBagDeleteHook@210308d5=LAST, com.baasbox.db.hook.HidePassword@6ede46f6=LAST} 
+2016-10-26 14:53:44,831 - INFO  - ...looking for evolutions... 
+2016-10-26 14:53:44,831 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,833 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,833 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_INTERNAL:db.version], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,834 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,835 - INFO  - ...db version is: a.000.009.005.010 
+2016-10-26 14:53:44,835 - DEBUG - application: main  queryBuilder: select  from _BB_User where ( user.name=? ) 
+2016-10-26 14:53:44,836 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,837 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=user.name=?, params=[baasbox], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,837 - DEBUG - application: main    sql.select  from _BB_User where ( user.name=? ) 
+2016-10-26 14:53:44,858 - DEBUG - application: main  queryBuilder: select  from _BB_User where ( user.name=? ) 
+2016-10-26 14:53:44,858 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,858 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=user.name=?, params=[internal_admin], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,858 - DEBUG - application: main    sql.select  from _BB_User where ( user.name=? ) 
+2016-10-26 14:53:44,861 - INFO  - Initializing session manager 
+2016-10-26 14:53:44,862 - DEBUG - application: main  getting session_tokens.timeout from index 
+2016-10-26 14:53:44,862 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,862 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,862 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_APPLICATION:session_tokens.timeout], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,862 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,863 - DEBUG - application: main  New session timeout: 0 ms 
+2016-10-26 14:53:44,863 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,863 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,863 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_INTERNAL:installation.id], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,866 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,866 - INFO  - BaasBox unique id is M2ExOWYwODAtOWI3Yi0xMWU2LTgzOTQtNTZhNmRjYmQ0NTU5 
+2016-10-26 14:53:44,867 - DEBUG - application: main  opening connection on db: db/baasbox for internal_admin 
+2016-10-26 14:53:44,868 - DEBUG - application: main  Registering hooks... 
+2016-10-26 14:53:44,868 - DEBUG - application: main  Registering BaasBox hooks... start 
+2016-10-26 14:53:44,869 - DEBUG - application: main  Registering BaasBox hooks... done 
+2016-10-26 14:53:44,869 - DEBUG - application: main  Hooks: {com.orientechnologies.orient.core.db.record.OClassTrigger@252dc8c4=FIRST, com.orientechnologies.orient.core.metadata.security.ORestrictedAccessHook@43045f9f=FIRST, com.orientechnologies.orient.core.metadata.security.OUserTrigger@2643d762=EARLY, com.orientechnologies.orient.core.metadata.function.OFunctionTrigger@6403e24c=REGULAR, com.baasbox.db.hook.Audit@75ae4a1f=REGULAR, com.orientechnologies.orient.core.index.OClassIndexManager@2f236de0=LAST, com.orientechnologies.orient.core.schedule.OSchedulerTrigger@4eba373c=LAST, com.orientechnologies.orient.core.db.record.ridbag.sbtree.ORidBagDeleteHook@767a014e=LAST, com.baasbox.db.hook.HidePassword@70228253=LAST} 
+2016-10-26 14:53:44,869 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,869 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,869 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.production.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,870 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,870 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,870 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,870 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile1.sandbox.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,870 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,871 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,871 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,871 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.production.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,871 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,871 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,871 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,872 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile2.sandbox.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,872 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,872 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,872 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,872 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.production.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,873 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,873 - DEBUG - application: main  queryBuilder: select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,873 - DEBUG - application: main  commandBuilder:  
+2016-10-26 14:53:44,873 - DEBUG - application: main    QueryParams [justCount=false, fields=, where=key = ?, params=[_BB_PUSH:profile3.sandbox.ios.certificate], page=-1, recordPerPage=20, groupBy=, orderBy=, depth=0 ] 
+2016-10-26 14:53:44,873 - DEBUG - application: main    sql.select  from _BB_Index where ( key = ? ) 
+2016-10-26 14:53:44,874 - INFO  - ...done 
+2016-10-26 14:53:44,874 - INFO  - Override settings... 
+2016-10-26 14:53:44,874 - INFO  - ...No setting to override... 
+2016-10-26 14:53:44,874 - INFO  - ...done 
+2016-10-26 14:53:44,907 - INFO  -  
+2016-10-26 14:53:44,907 - INFO  - To login into the administration console go to http://localhost:9000/console 
+2016-10-26 14:53:44,907 - INFO  - Default credentials are: user:admin pass:admin (if you did not changed it) AppCode: 1234567890 
+2016-10-26 14:53:44,907 - INFO  - Documentation is available at http://www.baasbox.com/documentation 
+2016-10-26 14:53:44,907 - DEBUG - application: main  Global.onStart() ended 
+2016-10-26 14:53:44,907 - INFO  - BaasBox is Ready. 
+2016-10-26 14:53:44,917 - INFO  - Application started (Prod) 
+2016-10-26 14:53:45,266 - INFO  - Listening for HTTP on /0:0:0:0:0:0:0:0:9000 
+2016-10-26 14:53:45,588 - INFO  - Session Cleaner: started 
+2016-10-26 14:53:45,590 - INFO  - Session cleaner: tokens: 0 - removed: 0 
+2016-10-26 14:53:45,590 - INFO  - Session cleaner: finished 
+2016-10-26 15:11:17,833 - INFO  - BaasBox is shutting down... 
+2016-10-26 15:11:17,833 - INFO  - Closing the DB connections... 
+2016-10-26 15:11:17,900 - INFO  - Shutting down embedded OrientDB Server 
+2016-10-26 15:11:17,901 - INFO  - ...ok 
+2016-10-26 15:11:17,901 - INFO  - Destroying session manager... 
+2016-10-26 15:11:17,901 - INFO  - Session Cleaner: cancelled 
+2016-10-26 15:11:17,901 - INFO  - ...BaasBox has stopped 
+2016-10-26 15:11:17,901 - INFO  - Shutdown application default Akka system. 

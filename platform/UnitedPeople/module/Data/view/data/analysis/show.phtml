@@ -1,0 +1,396 @@
+<div class="container">
+    <div class="c-header">
+        <h2>Flot Charts
+            <small>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks
+                and interactive features.
+            </small>
+        </h2>
+
+        <ul class="actions a-alt">
+            <li>
+                <a href="">
+                    <i class="zmdi zmdi-trending-up"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="zmdi zmdi-check-all"></i>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="" data-toggle="dropdown">
+                    <i class="zmdi zmdi-more-vert"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="">Refresh</a>
+                    </li>
+                    <li>
+                        <a href="">Manage Widgets</a>
+                    </li>
+                    <li>
+                        <a href="">Widgets Settings</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Line Chart with curved edges
+                        <small>Curved edges made possible using curvedLines Flot plugin.</small>
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="chart-edge">
+                        <div id="curved-line-chart" class="flot-chart" style="padding: 0px; position: relative;">
+                            <canvas class="flot-base"
+                                    style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 559px; height: 200px;"
+                                    width="1118" height="400"></canvas>
+                            <canvas class="flot-overlay"
+                                    style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 559px; height: 200px;"
+                                    width="1118" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Lines Chart
+                        <small>Same above example without curved edges.</small>
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="chart-edge">
+                        <div id="line-chart" class="flot-chart" style="padding: 0px; position: relative;">
+                            <canvas class="flot-base"
+                                    style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 559px; height: 200px;"
+                                    width="1118" height="400"></canvas>
+                            <canvas class="flot-overlay"
+                                    style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 559px; height: 200px;"
+                                    width="1118" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Bar Chart</h2>
+                </div>
+
+                <div class="card-body card-padding-sm">
+                    <div id="bar-chart" class="flot-chart" style="padding: 0px; position: relative;">
+                        <canvas class="flot-base"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 511px; height: 200px;"
+                                width="1022" height="400"></canvas>
+                        <div class="flot-text"
+                             style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);">
+                            <div class="flot-x-axis flot-x1-axis xAxis x1Axis"
+                                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;">
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 38px; text-align: center;">
+                                    1
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 113px; text-align: center;">
+                                    2
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 188px; text-align: center;">
+                                    3
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 263px; text-align: center;">
+                                    4
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 338px; text-align: center;">
+                                    5
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 413px; text-align: center;">
+                                    6
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 56px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 488px; text-align: center;">
+                                    7
+                                </div>
+                            </div>
+                            <div class="flot-y-axis flot-y1-axis yAxis y1Axis"
+                                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;">
+                                <div
+                                    style="position: absolute; top: 175px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 12px; text-align: right;">
+                                    0
+                                </div>
+                                <div
+                                    style="position: absolute; top: 140px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    25
+                                </div>
+                                <div
+                                    style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    50
+                                </div>
+                                <div
+                                    style="position: absolute; top: 71px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    75
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 1px; text-align: right;">
+                                    100
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 1px; text-align: right;">
+                                    125
+                                </div>
+                            </div>
+                        </div>
+                        <canvas class="flot-overlay"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 511px; height: 200px;"
+                                width="1022" height="400"></canvas>
+                    </div>
+                    <div class="flc-bar">
+                        <table style="font-size:smaller;color:#545454">
+                            <tbody>
+                            <tr>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div
+                                            style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Tokyo</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div
+                                            style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Seoul</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div
+                                            style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Beijing</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Dynamic Chart</h2>
+                </div>
+
+                <div class="card-body card-padding-sm">
+                    <div id="dynamic-chart" class="flot-chart" style="padding: 0px; position: relative;">
+                        <canvas class="flot-base"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 511px; height: 200px;"
+                                width="1022" height="400"></canvas>
+                        <div class="flot-text"
+                             style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);">
+                            <div class="flot-x-axis flot-x1-axis xAxis x1Axis"
+                                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;">
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 25px; text-align: center;">
+                                    0
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 117px; text-align: center;">
+                                    50
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 209px; text-align: center;">
+                                    100
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 304px; text-align: center;">
+                                    150
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 399px; text-align: center;">
+                                    200
+                                </div>
+                                <div
+                                    style="position: absolute; max-width: 85px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 494px; text-align: center;">
+                                    250
+                                </div>
+                            </div>
+                            <div class="flot-y-axis flot-y1-axis yAxis y1Axis"
+                                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;">
+                                <div
+                                    style="position: absolute; top: 170px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 12px; text-align: right;">
+                                    0
+                                </div>
+                                <div
+                                    style="position: absolute; top: 128px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    25
+                                </div>
+                                <div
+                                    style="position: absolute; top: 86px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    50
+                                </div>
+                                <div
+                                    style="position: absolute; top: 44px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 7px; text-align: right;">
+                                    75
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: noto-sans; color: rgb(159, 159, 159); left: 1px; text-align: right;">
+                                    100
+                                </div>
+                            </div>
+                        </div>
+                        <canvas class="flot-overlay"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 511px; height: 200px;"
+                                width="1022" height="400"></canvas>
+                    </div>
+                    <div class="flc-dynamic">
+                        <table style="font-size:smaller;color:#545454">
+                            <tbody>
+                            <tr>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #00BCD4;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Server Process Data</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Pie Chart</h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <div id="pie-chart" class="flot-chart-pie" style="padding: 0px; position: relative;">
+                        <canvas class="flot-base"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 475px; height: 300px;"
+                                width="950" height="600"></canvas>
+                        <canvas class="flot-overlay"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 475px; height: 300px;"
+                                width="950" height="600"></canvas>
+                    </div>
+                    <div class="flc-pie hidden-xs">
+                        <table style="font-size:smaller;color:#545454">
+                            <tbody>
+                            <tr>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #F44336;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Toyota</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #03A9F4;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Nissan</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #8BC34A;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Hyundai</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #FFEB3B;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Scion</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #009688;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Daihatsu</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Donut Chart</h2>
+                </div>
+
+                <div class="card-body card-padding">
+                    <div id="donut-chart" class="flot-chart-pie" style="padding: 0px; position: relative;">
+                        <canvas class="flot-base"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 475px; height: 300px;"
+                                width="950" height="600"></canvas>
+                        <canvas class="flot-overlay"
+                                style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 475px; height: 300px;"
+                                width="950" height="600"></canvas>
+                    </div>
+                    <div class="flc-donut hidden-xs">
+                        <table style="font-size:smaller;color:#545454">
+                            <tbody>
+                            <tr>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #F44336;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Toyota</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #03A9F4;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Nissan</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #8BC34A;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Hyundai</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #FFEB3B;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Scion</td>
+                                <td class="legendColorBox">
+                                    <div style="border:1px solid #ccc;padding:1px">
+                                        <div style="width:4px;height:0;border:5px solid #009688;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">Daihatsu</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

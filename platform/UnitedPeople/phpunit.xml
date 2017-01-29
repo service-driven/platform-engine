@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="ZendSkeletonApplication Test Suite">
+            <directory>./module/Application/test</directory>
+            <directory>./module/Authentication/test</directory>
+            <directory>./module/Data/test</directory>
+            <directory>./module/Networking/test</directory>
+            <directory>./module/Vision/test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

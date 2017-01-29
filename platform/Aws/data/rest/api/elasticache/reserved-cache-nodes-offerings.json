@@ -1,0 +1,1024 @@
+{
+    "ReservedCacheNodesOfferings": [
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 62.0, 
+            "ReservedCacheNodesOfferingId": "03cb10df-23f9-4fb0-b5e6-4466620de160", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.006, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.micro"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 6026.0, 
+            "ReservedCacheNodesOfferingId": "13c896b9-579f-4693-9d40-6506a60524ee", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.689, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 815.0, 
+            "ReservedCacheNodesOfferingId": "156f7742-cada-4a48-8778-c04b8e1e04cf", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.149, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 957.0, 
+            "ReservedCacheNodesOfferingId": "16a7477c-60c5-4ff7-b306-78c3462d8cc8", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.191, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 408.0, 
+            "ReservedCacheNodesOfferingId": "180d76c3-b5fc-49da-a887-068ea3010ccb", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.075, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 874.0, 
+            "ReservedCacheNodesOfferingId": "184640b8-d716-46e4-af04-020ee08615a1", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.053, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 11513.0, 
+            "ReservedCacheNodesOfferingId": "1d05d9df-fb72-40b7-b263-071e6fb59278", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.513, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 17476.0, 
+            "ReservedCacheNodesOfferingId": "1d673c04-1ef9-4737-af30-5963be88d553", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.064, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.10xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3262.0, 
+            "ReservedCacheNodesOfferingId": "1dff6516-dce7-4621-8f98-9332623d7506", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.595, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 2878.0, 
+            "ReservedCacheNodesOfferingId": "264b573b-e869-45b9-801c-af389a2b827a", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.129, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 6026.0, 
+            "ReservedCacheNodesOfferingId": "292ad988-1269-4bd8-aba4-6dfd7e1173fb", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.689, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 246.0, 
+            "ReservedCacheNodesOfferingId": "297bf320-0dee-46d9-b8f4-f2cf31cb583e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.023, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 6990.0, 
+            "ReservedCacheNodesOfferingId": "29ebbca3-158a-47d1-b7ac-fedabf9b78e9", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.426, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 815.0, 
+            "ReservedCacheNodesOfferingId": "2ac0d650-4224-482c-b5ae-1db61c089c39", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.149, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 423.0, 
+            "ReservedCacheNodesOfferingId": "2b8d5b17-0098-4d8c-a56c-4f5e3a78366d", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.022, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1507.0, 
+            "ReservedCacheNodesOfferingId": "311bf405-5824-4177-989d-d10abc1962e7", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.173, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 8156.0, 
+            "ReservedCacheNodesOfferingId": "3693c9fa-f913-4d29-a1ed-6c0efd15efba", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.49, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.10xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 423.0, 
+            "ReservedCacheNodesOfferingId": "3a461fb0-e9b4-4aa6-ad18-3da756ee0805", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.022, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 727.0, 
+            "ReservedCacheNodesOfferingId": "3c5f228a-3861-4a62-a8ed-3272b5fef52f", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.072, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 5756.0, 
+            "ReservedCacheNodesOfferingId": "411325e7-02e6-4aa2-9c0f-d1f05f071fd6", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.257, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 23026.0, 
+            "ReservedCacheNodesOfferingId": "42e43481-c400-4ad6-a43d-af7eea875a79", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.026, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.8xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3495.0, 
+            "ReservedCacheNodesOfferingId": "46643f61-0ec5-45f1-8c5e-1c20219ecb3e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.213, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 11513.0, 
+            "ReservedCacheNodesOfferingId": "49078b02-0101-4040-97c5-7c446f080e31", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.513, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3103.0, 
+            "ReservedCacheNodesOfferingId": "4a822804-6ad1-4510-b88b-569106f973b4", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.334, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1453.0, 
+            "ReservedCacheNodesOfferingId": "52e73653-dbcb-4e14-abc2-3fd61db207ec", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.144, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 212.0, 
+            "ReservedCacheNodesOfferingId": "55882563-8b48-4f70-ae4f-ca6afed7d5dd", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.011, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.small"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1631.0, 
+            "ReservedCacheNodesOfferingId": "61a08711-a9e4-48ce-96ab-3039fb9ae816", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.298, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 212.0, 
+            "ReservedCacheNodesOfferingId": "648c85fb-c786-4c37-88f0-986e53fa45ab", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.011, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.small"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 408.0, 
+            "ReservedCacheNodesOfferingId": "66a7e16e-ba8d-47b0-ad83-eac62716700b", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.075, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1914.0, 
+            "ReservedCacheNodesOfferingId": "693557ba-6c4b-43bf-a5d6-a9e58e6f425d", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.369, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1453.0, 
+            "ReservedCacheNodesOfferingId": "6a4a7f49-38e1-475b-90bf-bd5a33adffbc", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.144, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 957.0, 
+            "ReservedCacheNodesOfferingId": "6c024555-b0cf-4cb2-b5bc-bf570e6ff4ac", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.191, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1440.0, 
+            "ReservedCacheNodesOfferingId": "6eceb00c-5b2b-4499-a609-b20068922bce", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.064, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 364.0, 
+            "ReservedCacheNodesOfferingId": "708ff732-fddc-41a5-acd3-71f582bd005d", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.033, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 478.0, 
+            "ReservedCacheNodesOfferingId": "70be5fbd-2931-4000-ab6b-c1a09140f683", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.096, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 23026.0, 
+            "ReservedCacheNodesOfferingId": "7a164d8b-ae00-46d3-8c35-a3ab85fea6ad", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.026, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.8xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 8156.0, 
+            "ReservedCacheNodesOfferingId": "7ebc2285-bb7c-4a53-b772-7f13b9c10faf", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.49, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.10xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1748.0, 
+            "ReservedCacheNodesOfferingId": "7fb41df5-ac82-4121-bc79-01ca2c934ec7", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.107, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 240.0, 
+            "ReservedCacheNodesOfferingId": "818b5962-8681-4586-97de-5a3643847fdd", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.043, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 754.0, 
+            "ReservedCacheNodesOfferingId": "83efe77e-b579-4a97-9b3d-22411767ab70", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.086, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 874.0, 
+            "ReservedCacheNodesOfferingId": "84f3bbd1-bc95-4156-b0e4-eb03e24f1034", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.053, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1507.0, 
+            "ReservedCacheNodesOfferingId": "8e0dfdc1-2945-475c-a4db-d40aa4063fdc", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.173, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3103.0, 
+            "ReservedCacheNodesOfferingId": "8e3e4270-b006-4542-a16d-9172d70b2660", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.334, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 6990.0, 
+            "ReservedCacheNodesOfferingId": "9133da91-e609-45d0-84d8-bd48ce156ef6", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.426, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 240.0, 
+            "ReservedCacheNodesOfferingId": "96691d9a-4e82-4c19-961c-96129dd9ed2e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.043, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 727.0, 
+            "ReservedCacheNodesOfferingId": "9e3d0948-b436-441a-94c6-68eb8277f8e8", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.072, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1440.0, 
+            "ReservedCacheNodesOfferingId": "a163b88d-46f5-43f5-b42c-a48715224267", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.064, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 5756.0, 
+            "ReservedCacheNodesOfferingId": "a430c08e-666f-4799-bb46-a39ec9d962af", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.257, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 2878.0, 
+            "ReservedCacheNodesOfferingId": "a9cf7f4d-75b3-4b61-bd51-a8b95ea42035", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.129, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.r3.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 2906.0, 
+            "ReservedCacheNodesOfferingId": "ae30f927-22f7-40b7-994e-60d16903cfe4", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.281, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 2906.0, 
+            "ReservedCacheNodesOfferingId": "b4ff1d20-aceb-4de7-a25c-f62526bb4097", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.281, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 17476.0, 
+            "ReservedCacheNodesOfferingId": "b999a745-a97a-4610-b122-3dadce9bcfc7", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.064, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.10xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 12053.0, 
+            "ReservedCacheNodesOfferingId": "beaf0be7-2581-4b85-a679-255740509a87", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.378, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.8xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 106.0, 
+            "ReservedCacheNodesOfferingId": "bf860026-4296-4817-9a60-08b43be555e0", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.005, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.micro"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1748.0, 
+            "ReservedCacheNodesOfferingId": "bf9e4629-8007-4939-a857-ebe64f415586", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.107, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3495.0, 
+            "ReservedCacheNodesOfferingId": "c15512fd-89b7-46ff-adae-82842ef3679e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.213, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m4.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 62.0, 
+            "ReservedCacheNodesOfferingId": "c584091f-2154-4097-a495-37427882ecfd", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.006, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.micro"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1914.0, 
+            "ReservedCacheNodesOfferingId": "c91e8de9-4fb8-444d-8631-e43fac4f6bb2", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.369, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.2xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 364.0, 
+            "ReservedCacheNodesOfferingId": "cadd23cd-d061-4266-8727-935ce6751601", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.033, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 123.0, 
+            "ReservedCacheNodesOfferingId": "d09ca12b-bc94-422d-b73c-1317a9a2d60e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.013, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.small"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 3262.0, 
+            "ReservedCacheNodesOfferingId": "d12d22cb-2156-45be-b0e9-0a8f48fc7061", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.595, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.4xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 754.0, 
+            "ReservedCacheNodesOfferingId": "ddd9b009-4eae-4aaa-8767-f11b4517bf0b", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.086, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 246.0, 
+            "ReservedCacheNodesOfferingId": "e02ed24c-b920-4a6a-a496-24b43e29cc7a", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.023, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.medium"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 12053.0, 
+            "ReservedCacheNodesOfferingId": "e12a945a-76f1-4612-beb8-1089ded92d3a", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 1.378, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.r3.8xlarge"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 123.0, 
+            "ReservedCacheNodesOfferingId": "e67bbe8a-2ebf-4e98-ad43-7ad350519f6c", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.013, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.t2.small"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 478.0, 
+            "ReservedCacheNodesOfferingId": "e6ff2f0f-39de-455b-8346-3223153d676e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.096, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "redis", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m3.large"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 106.0, 
+            "ReservedCacheNodesOfferingId": "ef81ac3e-e0f0-45c4-ab6d-42cecab5243e", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.005, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 94608000, 
+            "CacheNodeType": "cache.t2.micro"
+        }, 
+        {
+            "OfferingType": "Heavy Utilization", 
+            "FixedPrice": 1631.0, 
+            "ReservedCacheNodesOfferingId": "f8fdab93-76b7-483d-84f9-ee65ba5a21f6", 
+            "UsagePrice": 0.0, 
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.298, 
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ], 
+            "ProductDescription": "memcached", 
+            "Duration": 31536000, 
+            "CacheNodeType": "cache.m4.2xlarge"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+<?php
+
+return [
+    'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+                'params' => [
+                    'host' => 'yourIp',
+                    'user' => 'username',
+                    'password' => 'password',
+                ],
+            ],
+        ],
+    ],
+];

@@ -1,0 +1,323 @@
+{
+    "MetricAlarms": [
+        {
+            "EvaluationPeriods": 3, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-BASTION-BastionAlarmFailedSystem-10H8LJUQ9LELA", 
+            "StateUpdatedTimestamp": "2016-09-08T08:19:31.674Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-08T08:17:21.879Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:automate:eu-central-1:ec2:recover"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Trigger a recovery when instance status check fails for 15 consecutive minutes.", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-09-08T08:19:31.668+0000\",\"startDate\":\"2016-09-08T08:14:00.000+0000\",\"statistic\":\"Minimum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":0.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 0.0, 
+            "AlarmName": "DEV-BASTION-BastionAlarmFailedSystem-10H8LJUQ9LELA", 
+            "Dimensions": [
+                {
+                    "Name": "InstanceId", 
+                    "Value": "i-00d876bf5f695979f"
+                }
+            ], 
+            "Statistic": "Minimum", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (0.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "StatusCheckFailed_System"
+        }, 
+        {
+            "EvaluationPeriods": 3, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-GRAPHITE-GraphiteAlarmFailedSystem-14BE23IKTYLMO", 
+            "StateUpdatedTimestamp": "2016-09-07T13:12:29.600Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-10-27T10:13:01.144Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:automate:eu-central-1:ec2:recover"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Trigger a recovery when instance status check fails for 15 consecutive minutes.", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-09-07T13:12:29.593+0000\",\"startDate\":\"2016-09-07T13:07:00.000+0000\",\"statistic\":\"Minimum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":0.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 0.0, 
+            "AlarmName": "DEV-GRAPHITE-GraphiteAlarmFailedSystem-14BE23IKTYLMO", 
+            "Dimensions": [
+                {
+                    "Name": "InstanceId", 
+                    "Value": "i-04b19188851675369"
+                }
+            ], 
+            "Statistic": "Minimum", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (0.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "StatusCheckFailed_System"
+        }, 
+        {
+            "EvaluationPeriods": 3, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-GRAYLOG-GraylogAlarmFailedSystem-T5OCORQJJG5L", 
+            "StateUpdatedTimestamp": "2016-09-08T09:06:06.220Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-08T09:05:04.098Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:automate:eu-central-1:ec2:recover"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Trigger a recovery when instance status check fails for 15 consecutive minutes.", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-09-08T09:06:06.206+0000\",\"startDate\":\"2016-09-08T09:01:00.000+0000\",\"statistic\":\"Minimum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":0.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 0.0, 
+            "AlarmName": "DEV-GRAYLOG-GraylogAlarmFailedSystem-T5OCORQJJG5L", 
+            "Dimensions": [
+                {
+                    "Name": "InstanceId", 
+                    "Value": "i-00fec7cb6e509e56e"
+                }
+            ], 
+            "Statistic": "Minimum", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (0.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "StatusCheckFailed_System"
+        }, 
+        {
+            "EvaluationPeriods": 3, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-LOGSTASH-Logstash1AlarmFailedSystem-1RWFIECXJ2YWO", 
+            "StateUpdatedTimestamp": "2016-09-26T12:56:40.536Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-26T12:53:30.408Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:automate:eu-central-1:ec2:recover"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Trigger a recovery when instance status check fails for 15 consecutive minutes.", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-09-26T12:56:40.529+0000\",\"startDate\":\"2016-09-26T12:51:00.000+0000\",\"statistic\":\"Minimum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":0.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 0.0, 
+            "AlarmName": "DEV-LOGSTASH-Logstash1AlarmFailedSystem-1RWFIECXJ2YWO", 
+            "Dimensions": [
+                {
+                    "Name": "InstanceId", 
+                    "Value": "i-0d0b345ef17cb206a"
+                }
+            ], 
+            "Statistic": "Minimum", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (0.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "StatusCheckFailed_System"
+        }, 
+        {
+            "EvaluationPeriods": 3, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-LOGSTASH-Logstash2AlarmFailedSystem-9O9G4OG5JP0M", 
+            "StateUpdatedTimestamp": "2016-09-27T07:42:23.722Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-27T07:39:51.137Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:automate:eu-central-1:ec2:recover"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Trigger a recovery when instance status check fails for 15 consecutive minutes.", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-09-27T07:42:23.714+0000\",\"startDate\":\"2016-09-27T07:37:00.000+0000\",\"statistic\":\"Minimum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":0.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 0.0, 
+            "AlarmName": "DEV-LOGSTASH-Logstash2AlarmFailedSystem-9O9G4OG5JP0M", 
+            "Dimensions": [
+                {
+                    "Name": "InstanceId", 
+                    "Value": "i-0a6899f23da941329"
+                }
+            ], 
+            "Statistic": "Minimum", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (0.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "StatusCheckFailed_System"
+        }, 
+        {
+            "EvaluationPeriods": 2, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SENSU-SensuServerSqsQueueDepthAlarmHigh-R1KI5ER4XOLB", 
+            "StateUpdatedTimestamp": "2016-11-18T14:17:52.355Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-07T12:52:42.086Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:be2cc35a-4298-4f4f-8a6e-858738327191:autoScalingGroupName/DEV-SENSU-SensuAutoScalingGroup-ZZE2FM8GA866:policyName/DEV-SENSU-SensuScaleUpPolicy-184SHTH2XJVSV"
+            ], 
+            "Namespace": "AWS/SQS", 
+            "AlarmDescription": "Alarm if queue depth grows beyond 100 messages", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-18T14:17:52.349+0000\",\"startDate\":\"2016-11-18T14:07:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[845.0,0.0],\"threshold\":100.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 100.0, 
+            "AlarmName": "DEV-SENSU-SensuServerSqsQueueDepthAlarmHigh-R1KI5ER4XOLB", 
+            "Dimensions": [
+                {
+                    "Name": "QueueName", 
+                    "Value": "dev-sensu-server"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 1 datapoint (0.0) was not greater than the threshold (100.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "ApproximateNumberOfMessagesVisible"
+        }, 
+        {
+            "EvaluationPeriods": 6, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SENSU-SensuServerSqsQueueDepthAlarmLow-WX5PQX04WWED", 
+            "StateUpdatedTimestamp": "2016-11-26T15:36:38.979Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-07T12:52:41.914Z", 
+            "ComparisonOperator": "LessThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:51565016-dd88-48d1-9f0b-f247a39911b4:autoScalingGroupName/DEV-SENSU-SensuAutoScalingGroup-ZZE2FM8GA866:policyName/DEV-SENSU-SensuScaleDownPolicy-LTT6HQL79SK5"
+            ], 
+            "Namespace": "AWS/SQS", 
+            "AlarmDescription": "Alarm if queue depth shrinks below 10 messages", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-26T15:36:38.970+0000\",\"startDate\":\"2016-11-26T15:06:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[0.0,0.0,0.0,0.0,0.0,0.0],\"threshold\":10.0}", 
+            "Period": 300, 
+            "StateValue": "ALARM", 
+            "Threshold": 10.0, 
+            "AlarmName": "DEV-SENSU-SensuServerSqsQueueDepthAlarmLow-WX5PQX04WWED", 
+            "Dimensions": [
+                {
+                    "Name": "QueueName", 
+                    "Value": "dev-sensu-server"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 6 datapoints were less than the threshold (10.0). The most recent datapoints: [0.0, 0.0].", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "ApproximateNumberOfMessagesVisible"
+        }, 
+        {
+            "EvaluationPeriods": 2, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SHOP-BACKEND-B2C-ShopBackendB2cCpuAlarmHigh-1TRZG595BXMP7", 
+            "StateUpdatedTimestamp": "2016-11-24T14:57:29.182Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-11-22T12:08:08.234Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:84c6c5f3-2502-475d-9233-18577549b99f:autoScalingGroupName/DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX:policyName/DEV-SHOP-BACKEND-B2C-ShopBackendB2cScaleUpPolicy-5CCWJ5FV2NKH"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Scale-up if CPUUtilization > 75% for 10 minutes", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-24T14:57:29.172+0000\",\"startDate\":\"2016-11-24T14:52:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[4.918],\"threshold\":75.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 75.0, 
+            "AlarmName": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cCpuAlarmHigh-1TRZG595BXMP7", 
+            "Dimensions": [
+                {
+                    "Name": "AutoScalingGroupName", 
+                    "Value": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 1 datapoint (4.918) was not greater than the threshold (75.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "EvaluationPeriods": 6, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SHOP-BACKEND-B2C-ShopBackendB2cCpuAlarmLow-1GS9S6Q14R3QQ", 
+            "StateUpdatedTimestamp": "2016-11-24T14:24:07.710Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-11-22T12:08:10.257Z", 
+            "ComparisonOperator": "LessThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:0db49f85-6259-4df7-8358-d15cb2442fc1:autoScalingGroupName/DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX:policyName/DEV-SHOP-BACKEND-B2C-ShopBackendB2cScaleDownPolicy-UXBCODXQ07TD"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Scale-down if CPUUtilization < 45% for 30 minutes", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-24T14:24:07.702+0000\",\"startDate\":\"2016-11-24T13:59:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[10.114,5.014,11.278,7.781999999999999],\"threshold\":45.0}", 
+            "Period": 300, 
+            "StateValue": "ALARM", 
+            "Threshold": 45.0, 
+            "AlarmName": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cCpuAlarmLow-1GS9S6Q14R3QQ", 
+            "Dimensions": [
+                {
+                    "Name": "AutoScalingGroupName", 
+                    "Value": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 4 datapoints were less than the threshold (45.0). The most recent datapoints: [11.278, 7.781999999999999].", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "EvaluationPeriods": 2, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cCpuAlarmHigh-1T9FGJS21VQH1", 
+            "StateUpdatedTimestamp": "2016-11-18T13:02:00.260Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-08T12:11:07.018Z", 
+            "ComparisonOperator": "GreaterThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:ac9dff72-2885-40d4-976d-56f8a6501edc:autoScalingGroupName/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9:policyName/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cScaleUpPolicy-HHUNL7HK2607"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Scale-up if CPUUtilization > 75% for 10 minutes", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-18T13:02:00.252+0000\",\"startDate\":\"2016-11-18T12:52:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[14.734],\"threshold\":75.0}", 
+            "Period": 300, 
+            "StateValue": "OK", 
+            "Threshold": 75.0, 
+            "AlarmName": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cCpuAlarmHigh-1T9FGJS21VQH1", 
+            "Dimensions": [
+                {
+                    "Name": "AutoScalingGroupName", 
+                    "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 1 datapoint (14.734) was not greater than the threshold (75.0).", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "EvaluationPeriods": 6, 
+            "AlarmArn": "arn:aws:cloudwatch:eu-central-1:074934811965:alarm:DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cCpuAlarmLow-6SH95UTG01O9", 
+            "StateUpdatedTimestamp": "2016-11-26T06:44:13.099Z", 
+            "AlarmConfigurationUpdatedTimestamp": "2016-09-12T09:46:17.124Z", 
+            "ComparisonOperator": "LessThanThreshold", 
+            "AlarmActions": [
+                "arn:aws:autoscaling:eu-central-1:074934811965:scalingPolicy:f9e99c22-aeb9-4ee1-a978-4eae4007ddd6:autoScalingGroupName/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9:policyName/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cScaleDownPolicy-5YA8YNZTNPZ9"
+            ], 
+            "Namespace": "AWS/EC2", 
+            "AlarmDescription": "Scale-down if CPUUtilization < 45% for 30 minutes", 
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2016-11-26T06:44:13.091+0000\",\"startDate\":\"2016-11-26T06:09:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[14.22,14.359999999999998,14.55,17.328,17.242,28.03533333333333],\"threshold\":45.0}", 
+            "Period": 300, 
+            "StateValue": "ALARM", 
+            "Threshold": 45.0, 
+            "AlarmName": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cCpuAlarmLow-6SH95UTG01O9", 
+            "Dimensions": [
+                {
+                    "Name": "AutoScalingGroupName", 
+                    "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9"
+                }
+            ], 
+            "Statistic": "Average", 
+            "StateReason": "Threshold Crossed: 6 datapoints were less than the threshold (45.0). The most recent datapoints: [17.242, 28.03533333333333].", 
+            "InsufficientDataActions": [], 
+            "OKActions": [], 
+            "ActionsEnabled": true, 
+            "MetricName": "CPUUtilization"
+        }
+    ]
+}

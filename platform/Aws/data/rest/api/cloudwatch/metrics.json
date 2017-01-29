@@ -1,0 +1,2692 @@
+{
+    "Metrics": [
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "IsMaster"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "IsMaster"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "IsMaster"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "IsMaster"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "IsMaster"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "CacheHits"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "CurrItems"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationBytes"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ReplicationLag"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "CurrConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "CacheMisses"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "NewConnections"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "Reclaimed"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "Evictions"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "SetBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "SetBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "HashBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "HashBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "HashBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "ListBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desxbx67jgfwre7-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SaveInProgress"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "BytesUsedForCache"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "SetBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesOut"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desgc0u7pm450i1-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "StringBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "KeyBasedCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }, 
+                {
+                    "Name": "CacheNodeId", 
+                    "Value": "0001"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "GetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-001"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "NetworkBytesIn"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [
+                {
+                    "Name": "CacheClusterId", 
+                    "Value": "desiw9ox0uhmjoc-002"
+                }
+            ], 
+            "MetricName": "SetTypeCmds"
+        }, 
+        {
+            "Namespace": "AWS/ElastiCache", 
+            "Dimensions": [], 
+            "MetricName": "SaveInProgress"
+        }
+    ]
+}

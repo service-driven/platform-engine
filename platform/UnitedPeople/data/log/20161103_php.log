@@ -1,0 +1,11 @@
+========================================================================================================================
+2016-11-03T00:32:21+00:00 ERR (3):  PHP Error in file : /var/www/app/vendor/zendframework/zend-servicemanager/src/ServiceManager.php at line : 754
+    with type error : E_ERROR : Uncaught PDOException: SQLSTATE[08006] [7] FATAL:  password authentication failed for user "app_user"
+FATAL:  password authentication failed for user "app_user" in /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('pgsql:host=loca...', 'app_user', '9]7m@`DsgteAamP...', Array)
+#1 /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOPgSql/Driver.php(42): Doctrine\DBAL\Driver\PDOConnection->__construct('pgsql:host=loca...', 'app_user', '9]7m@`DsgteAamP...', Array)
+#2 /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOPgSql\Driver->connect(Array, 'app_user', '9]7m@`DsgteAamP...', Array)
+#3 /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatformV in /
+

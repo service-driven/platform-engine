@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="php@cb41cf27-afa8-4400-bfa0-7343311cdb30">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casual-fashion.dev" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="php@aef89562-d043-4972-906a-b3741a15ac04">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casual-fashion.dev" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="php@054d18cc-ae35-432c-8351-7aa365c97ff7">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casual-fashion.dev" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="php@eda9d321-801c-48ef-9194-ab44b96247da">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/data/b2c-shop" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

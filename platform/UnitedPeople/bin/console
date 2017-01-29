@@ -1,0 +1,56 @@
+#!/usr/bin/env php
+<?php
+
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Mapping\Driver\DatabaseDriver;
+use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
+use Doctrine\ORM\Tools\EntityGenerator;
+use Doctrine\ORM\Tools\Export\ClassMetadataExporter;
+use Doctrine\ORM\Tools\Export\Driver\AnnotationExporter;
+use Zend\Console\Request;
+use Zend\Mvc\Application;
+use Zend\ServiceManager\ServiceManager;
+use Zend\Stdlib\ArrayUtils;
+
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$applicationConfig = require __DIR__ . '/../config/application.config.php';
+if (file_exists(__DIR__ . '/config/development.config.php')) {
+    $applicationConfig = ArrayUtils::merge($applicationConfig, require __DIR__ . '/../config/development.config.php');
+}
+
+$application = Application::init($applicationConfig);
+/** @var ServiceManager $serviceManager */
+$serviceManager = $application->getServiceManager();
+/** @var EntityManager $entityManager */
+$entityManager = $serviceManager->get(EntityManager::class);
+/** @var Request $request */
+$request = $application->getRequest();
+$command = $request->getParams()->get(0);
+
+if ($command === 'create-entities') {
+    $exportFormats = [
+        'xml' => __DIR__ . '/../module/Indent/config/doctrine/orm/xml',
+        'yml' => __DIR__ . '/../module/Indent/config/doctrine/orm/yml',
+        'php' => __DIR__ . '/../module/Indent/config/doctrine/orm/php',
+        'annotation' => __DIR__ . '/../module/Indent/config/doctrine/orm/annotation',
+    ];
+
+
+    $driver = new DatabaseDriver($entityManager->getConnection()->getSchemaManager());
+    $entityManager->getConfiguration()->setMetadataDriverImpl($driver);
+
+    $classMetadataFactory = new DisconnectedClassMetadataFactory();
+    $classMetadataFactory->setEntityManager($entityManager);
+
+    foreach ($exportFormats as $exportFormat => $exportPath) {
+        $classMetadataExporterManager = new ClassMetadataExporter();
+        /** @var AnnotationExporter $classMetadataExporter */
+        $classMetadataExporter = $classMetadataExporterManager->getExporter($exportFormat, $exportPath);
+
+        $classMetadataExporter->setEntityGenerator(new EntityGenerator());
+        $classMetadataExporter->setMetadata($classMetadataFactory->getAllMetadata());
+        $classMetadataExporter->export();
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "event-driven/stack-engine",
+  "authors": [
+    {
+      "name": "Tobias Oberrauch",
+      "email": "t.oberrauch@simplicity.ag"
+    }
+  ],
+  "bin": [
+    "bin/stack-engine"
+  ],
+  "require": {
+    "docker-php/docker-php": "^1.24",
+    "recoil/recoil": "^0.6.0",
+    "zfcampus/zf-console": "^1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Simplicity\\StackEngine\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Simplicity\\StackEngine\\": "test"
+    }
+  }
+}

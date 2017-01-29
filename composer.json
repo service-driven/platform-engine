@@ -1,5 +1,8 @@
 {
     "name": "tobiasoberrauch/platform-engine",
+    "bin": [
+        "bin/platform"
+    ],
     "authors": [
         {
             "name": "Tobias Oberrauch",
@@ -7,6 +10,12 @@
         }
     ],
     "require": {
-        "symfony/console": "^3.2"
+        "symfony/console": "^3.2",
+        "symfony/finder": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Console\\PlatformEngine\\": "console/PlatformEngine/src/"
+        }
     }
 }

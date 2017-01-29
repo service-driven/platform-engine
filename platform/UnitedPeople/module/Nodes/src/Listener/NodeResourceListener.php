@@ -1,0 +1,73 @@
+<?php
+
+namespace Nodes\Listener;
+
+use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\EntityRepository;
+use DoctrineModule\Paginator\Adapter\Selectable;
+use Zend\Http\PhpEnvironment\Request;
+use Zend\Paginator\Paginator;
+use ZF\ApiProblem\ApiProblem;
+use ZF\Rest\AbstractResourceListener;
+use ZF\Rest\ResourceEvent;
+
+/**
+ * Class NodeResourceListener
+ *
+ * PHP Version 5
+ *
+ * @category  PHP
+ * @package   Nodes\Listener
+ * @author    Simplicity Trade GmbH <it@simplicity.ag>
+ * @copyright 2014-2016 Simplicity Trade GmbH
+ * @license   Proprietary http://www.simplicity.ag
+ */
+class NodeResourceListener extends AbstractResourceListener
+{
+    /** @var EntityManagerInterface */
+    protected $entityManager;
+
+    /**
+     * @param EntityManagerInterface $entityManager
+     */
+    public function setEntityManager(EntityManagerInterface $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
+
+    /**
+     * @param string $id
+     * @return object
+     */
+    public function fetch($id)
+    {
+        $repository = $this->entityManager->getRepository($this->entityClass);
+
+        return $repository->find($id);
+    }
+
+
+    /**
+     * Fetch all or a subset of resources
+     *
+     * @param  array $params
+     * @return ApiProblem|mixed
+     */
+    public function fetchAll($params = [])
+    {
+        /** @var EntityRepository $repository */
+        $repository = $this->entityManager->getRepository($this->entityClass);
+
+        $adapter = new Selectable($repository);
+        /** @var ResourceEvent $event */
+        $event = $this->getEvent();
+        /** @var Request $request */
+        $request = $event->getRequest();
+        $page = $request->getQuery('page');
+
+        $paginator = new Paginator($adapter);
+        $paginator->setCurrentPageNumber($page)->setItemCountPerPage(10);
+
+        return $paginator;
+    }
+}

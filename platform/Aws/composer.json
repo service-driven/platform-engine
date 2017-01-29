@@ -1,0 +1,13 @@
+{
+    "name": "event-driven/aws-platform",
+    "authors": [
+        {
+            "name": "Tobias Oberrauch",
+            "email": "t.oberrauch@simplicity.ag"
+        }
+    ],
+    "require": {
+        "recoil/recoil": "^0.6.0",
+        "zfcampus/zf-console": "^1.3"
+    }
+}

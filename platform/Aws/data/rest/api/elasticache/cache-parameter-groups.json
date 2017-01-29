@@ -1,0 +1,29 @@
+{
+    "CacheParameterGroups": [
+        {
+            "CacheParameterGroupName": "default.memcached1.4", 
+            "CacheParameterGroupFamily": "memcached1.4", 
+            "Description": "Default parameter group for memcached1.4"
+        }, 
+        {
+            "CacheParameterGroupName": "default.redis2.6", 
+            "CacheParameterGroupFamily": "redis2.6", 
+            "Description": "Default parameter group for redis2.6"
+        }, 
+        {
+            "CacheParameterGroupName": "default.redis2.8", 
+            "CacheParameterGroupFamily": "redis2.8", 
+            "Description": "Default parameter group for redis2.8"
+        }, 
+        {
+            "CacheParameterGroupName": "default.redis3.2", 
+            "CacheParameterGroupFamily": "redis3.2", 
+            "Description": "Default parameter group for redis3.2"
+        }, 
+        {
+            "CacheParameterGroupName": "default.redis3.2.cluster.on", 
+            "CacheParameterGroupFamily": "redis3.2", 
+            "Description": "Customized default parameter group for redis3.2 with cluster mode on"
+        }
+    ]
+}

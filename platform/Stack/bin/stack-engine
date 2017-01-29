@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+namespace Simplicity\StackEngine;
+
+use Simplicity\StackEngine\Engine\StackEngine;
+use ZF\Console\ExceptionHandler;
+
+$application = StackEngine::getApplication();
+
+/** @var ExceptionHandler $exceptionHandler */
+$exceptionHandler = $application->getExceptionHandler();
+$exceptionHandler->setMessageTemplate(':className:');
+
+$exit = $application->run();
+exit($exit);

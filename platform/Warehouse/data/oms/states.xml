@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<statemachine
+        xmlns="spryker:oms-01"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
+
+
+    <process name="Prepayment" main="true">
+        <transitions>
+            <transition>
+                <source>new</source>
+                <target>invoice generated</target>
+                <event>create invoice</event>
+            </transition>
+
+            <transition>
+                <source>invoice generated</source>
+                <target>invoice sent</target>
+                <event>send invoice</event>
+            </transition>
+
+            <transition>
+                <source>invoice sent</source>
+                <target>waiting for payment</target>
+                <event>waiting for payment</event>
+            </transition>
+
+            <transition>
+                <source>waiting for payment</source>
+                <target>cancelled</target>
+                <event>cancel</event>
+            </transition>
+
+            <transition>
+                <source>waiting for payment</source>
+                <target>payment reminder sent</target>
+                <event>payment not received</event>
+            </transition>
+
+            <transition>
+                <source>waiting for payment</source>
+                <target>payment received</target>
+                <event>payment received</event>
+            </transition>
+
+            <transition>
+                <source>payment reminder sent</source>
+                <target>cancelled</target>
+                <event>cancel</event>
+            </transition>
+
+            <transition>
+                <source>payment reminder sent</source>
+                <target>payment received</target>
+                <event>payment received</event>
+            </transition>
+
+            <transition>
+                <source>payment received</source>
+                <target>exported order</target>
+                <event>export order</event>
+            </transition>
+
+            <transition>
+                <source>exported order</source>
+                <target>order shipped</target>
+                <event>ship order</event>
+            </transition>
+
+            <transition>
+                <source>order shipped</source>
+                <target>ready for return</target>
+                <event>ready for return</event>
+            </transition>
+
+            <transition>
+                <source>ready for return</source>
+                <target>completed</target>
+                <event>item not returned</event>
+            </transition>
+
+            <transition>
+                <source>ready for return</source>
+                <target>refund initiated</target>
+                <event>items returned</event>
+            </transition>
+
+            <transition>
+                <source>refund initiated</source>
+                <target>completed</target>
+                <event>refund payment</event>
+            </transition>
+
+        </transitions>
+        <states>
+            <state name="new"/>
+            <state name="invoice generated"/>
+            <state name="invoice sent"/>
+            <state name="waiting for payment"/>
+            <state name="cancelled"/>
+            <state name="payment received"/>
+            <state name="payment reminder sent"/>
+            <state name="exported order"/>
+            <state name="order shipped"/>
+            <state name="ready for return"/>
+            <state name="refund initiated"/>
+            <state name="completed"/>
+        </states>
+        <events>
+            <event name="create invoice" onEnter="true"/>
+            <event name="send invoice" onEnter="true"/>
+            <event name="export order" onEnter="true"/>
+            <event name="ship order" manual="true"/>
+            <event name="waiting for payment" onEnter="true"/>
+            <event name="payment not received" timeout="1hour"/>
+            <event name="payment received" manual="true"/>
+            <event name="ready for return" onEnter="true"/>
+            <event name="item not returned" timeout="100days"/>
+            <event name="items returned" manual="true"/>
+            <event name="refund payment" manual="true"/>
+            <event name="cancel" manual="true"/>
+        </events>
+
+    </process>
+
+
+</statemachine>

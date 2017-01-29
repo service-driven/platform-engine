@@ -1,0 +1,7 @@
+{
+    "name": "unitedpeople.local",
+    "ip": "192.168.42.42",
+    "host_path": "web",
+    "memory": "2048",
+    "cpus": "2"
+}

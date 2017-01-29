@@ -1,0 +1,8 @@
+{
+  "links": {
+    "jira": "https://horizon.simplicity.ag/jira/browse/BCOS-1899",
+  },
+  "branches": [
+    "https://horizon.simplicity.ag/fecru/changelog/~br=BCOS-1899/onlineshop",
+  ]
+}

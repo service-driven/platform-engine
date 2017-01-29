@@ -1,0 +1,200 @@
+{
+    "Snapshots": [
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-22-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "55 MB", 
+                    "SnapshotCreateTime": "2016-11-22T06:00:25Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-23-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "73 MB", 
+                    "SnapshotCreateTime": "2016-11-23T06:00:31Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-24-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "90 MB", 
+                    "SnapshotCreateTime": "2016-11-24T06:00:32Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-25-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "19 MB", 
+                    "SnapshotCreateTime": "2016-11-25T06:00:41Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-26-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "40 MB", 
+                    "SnapshotCreateTime": "2016-11-26T06:00:29Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-27-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "58 MB", 
+                    "SnapshotCreateTime": "2016-11-27T06:00:24Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }, 
+        {
+            "Engine": "redis", 
+            "CacheParameterGroupName": "default.redis2.8", 
+            "VpcId": "vpc-22bbfe4b", 
+            "CacheClusterId": "desiw9ox0uhmjoc-002", 
+            "SnapshotRetentionLimit": 7, 
+            "NumCacheNodes": 1, 
+            "SnapshotName": "automatic.desiw9ox0uhmjoc-002-2016-11-28-06-00", 
+            "CacheClusterCreateTime": "2016-11-18T08:35:49.347Z", 
+            "AutoMinorVersionUpgrade": false, 
+            "PreferredAvailabilityZone": "eu-central-1b", 
+            "SnapshotStatus": "available", 
+            "SnapshotSource": "automated", 
+            "SnapshotWindow": "06:00-07:00", 
+            "EngineVersion": "2.8.24", 
+            "NodeSnapshots": [
+                {
+                    "CacheSize": "73 MB", 
+                    "SnapshotCreateTime": "2016-11-28T06:00:39Z", 
+                    "CacheNodeId": "0001", 
+                    "CacheNodeCreateTime": "2016-11-18T08:35:49.347Z"
+                }
+            ], 
+            "CacheSubnetGroupName": "dev-s-shopb-1uf6b7zyo79lm", 
+            "Port": 6379, 
+            "PreferredMaintenanceWindow": "thu:00:30-thu:01:30", 
+            "CacheNodeType": "cache.m3.medium"
+        }
+    ]
+}

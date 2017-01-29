@@ -1,0 +1,316 @@
+<?php
+
+use Application\Service\ApplicationNavigation;
+use Application\Service\MetaNavigation;
+use Application\Service\PrimaryNavigation;
+use Zend\Navigation\Navigation;
+use Zend\View\Helper\Navigation as NavigationHelper;
+
+/** @var NavigationHelper $navigationHelper */
+$navigationHelper = $this->navigation();
+/** @var Navigation $navigation */
+$navigation = $navigationHelper->getContainer();
+
+echo $this->doctype();
+?>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('Unsere Mission ist es, Informationen zu organisieren und weltweit zugänglich zu machen')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php
+    echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+    ?>
+
+    <!-- Le styles -->
+    <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+        ->appendStylesheet($this->basePath('/components/fullcalendar/dist/fullcalendar.min.css'))
+        ->appendStylesheet($this->basePath('/components/animate.css/animate.min.css'))
+        ->appendStylesheet($this->basePath('/components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css'))
+        ->appendStylesheet($this->basePath('/components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css'))
+        ->appendStylesheet($this->basePath('/components/google-material-color/dist/palette.css'))
+        ->appendStylesheet($this->basePath('/css/app.min.1.css'))
+        ->appendStylesheet($this->basePath('/css/app.min.2.css'))
+    ?>
+</head>
+<body data-ma-header="blue">
+<header id="header" class="media">
+    <div id="app-switcher" class="
+    pull-left h-logo dropdown">
+        <a href style="padding: 10px 7px; margin-right: 7px;" class="pull-left" data-ma-action="sidebar-open"
+           data-ma-target="app-switcher"
+           data-content="sidebar-app-switcher-content-apps">
+            <i class="hm-icon zmdi zmdi-more-vert"></i>
+        </a>
+        <a href="<?php echo $this->url('home'); ?>" class="hidden-xs pull-left" style="margin-top: 2px;">
+            TF R-T&nbsp;<small>Gemeinsam erfolgreich</small>
+        </a>
+        <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+            <div class="mc-wrap">
+                <div class="mcw-line top palette-White bg"></div>
+                <div class="mcw-line center palette-White bg"></div>
+                <div class="mcw-line bottom palette-White bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <?php echo $this->navigation(MetaNavigation::class)->menu()->setPartial('partials/menu/meta')->render(); ?>
+
+    <div class="media-body h-search">
+        <form class="p-relative">
+            <input type="text" class="hs-input"
+                   placeholder="Suche nach Personen, Ziele, Vernetzungen, Strategien, Bereiche und Inhalte">
+            <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
+        </form>
+    </div>
+
+</header>
+<section id="main">
+    <aside id="sidebar-app-switcher" class="sidebar">
+        <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="blue">
+            <li>
+                <a class="sidebar-app-switcher-content-home" href="#sidebar-app-switcher-content-home"
+                   data-toggle="tab">Home</a>
+            </li>
+            <li>
+                <a class="sidebar-app-switcher-content-apps" href="#sidebar-app-switcher-content-apps"
+                   data-toggle="tab">Apps</a>
+            </li>
+            <li>
+                <a class="sidebar-app-switcher-content-community" href="#sidebar-app-switcher-content-community"
+                   data-toggle="tab">Community</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="sidebar-app-switcher-content-home">
+                Home
+            </div>
+            <div class="tab-pane fade" id="sidebar-app-switcher-content-apps">
+                <?php echo $this->navigation(ApplicationNavigation::class)->menu()->setPartial('partials/menu/applications')->render(); ?>
+            </div>
+            <div class="tab-pane fade" id="sidebar-app-switcher-content-community">
+                Community
+            </div>
+        </div>
+    </aside>
+    <aside id="sidebar-user-alerts" class="sidebar">
+        <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="blue">
+            <li>
+                <a href="#sua-messages" class="sua-messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a>
+            </li>
+            <li>
+                <a href="#sua-notifications" class="sua-notifications" data-toggle="tab">
+                    <i class="zmdi zmdi-notifications"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#sua-tasks" class="sua-tasks" data-toggle="tab">
+                    <i class="zmdi zmdi-accounts zmdi-hc-fw"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="sua-messages">
+                <ul class="sua-menu list-inline list-unstyled palette-Light-Blue bg">
+                    <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                    <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Schließen</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="/img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                mattis lobortis sapien non posuere
+                            </small>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="" class="btn btn-float btn-danger m-btn">
+                    <i class="zmdi zmdi-plus"></i>
+                </a>
+            </div>
+            <div class="tab-pane fade" id="sua-notifications">
+                <ul class="sua-menu list-inline list-unstyled palette-Orange bg">
+                    <li><a href=""><i class="zmdi zmdi-volume-off"></i> Mute</a></li>
+                    <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="/img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                mattis lobortis sapien non posuere
+                            </small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sua-tasks">
+                <ul class="sua-menu list-inline list-unstyled palette-Green-400 bg">
+                    <li><a href=""><i class="zmdi zmdi-time"></i> Archived</a></li>
+                    <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <div class="list-group-item">
+                        <div class="lgi-heading m-b-5">HTML5 Validation Report</div>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 95%">
+                                <span class="sr-only">95% Complete (success)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="btn btn-float btn-danger m-btn">
+                    <i class="zmdi zmdi-plus"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <aside id="s-main-menu" class="sidebar">
+        <div class="smm-header">
+            <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+        </div>
+
+        <ul class="smm-alerts">
+            <li data-content-class="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-email"></i>
+            </li>
+            <li data-content-class="sua-notifications" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-notifications"></i>
+            </li>
+            <li data-content-class="sua-tasks" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-accounts zmdi-hc-fw"></i>
+            </li>
+        </ul>
+
+        <?php echo $this->navigation(PrimaryNavigation::class)->menu()->setPartial('partials/menu/primary')->render(); ?>
+    </aside>
+
+    <section id="content">
+        <?php echo $this->content; ?> 
+    </section>
+</section>
+
+<!-- Page Loader -->
+<div class="page-loader palette-Blue bg">
+    <div class="preloader pl-xl pls-white">
+        <svg class="pl-circular" viewBox="25 25 50 50">
+            <circle class="plc-path" cx="50" cy="50" r="20"/>
+        </svg>
+    </div>
+</div>
+
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1 class="c-white">Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
+        to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="application/img/browsers/chrome.png" alt="">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="application/img/browsers/firefox.png" alt="">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="application/img/browsers/opera.png" alt="">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="application/img/browsers/safari.png" alt="">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="application/img/browsers/ie.png" alt="">
+                    <div>IE (New)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+
+<script type="xing/login">
+{
+  "consumer_key": "e968c5ddb7da9237fbce"
+}
+
+</script>
+
+<script>(function (d) {
+        var js, id = 'lwx';
+        if (d.getElementById(id)) return;
+        js = d.createElement('script');
+        js.id = id;
+        js.src = "https://www.xing-share.com/plugins/login.js";
+        d.getElementsByTagName('head')[0].appendChild(js)
+    }(document));</script>
+
+<!-- Javascript Libraries -->
+<script src="/components/jquery/dist/jquery.min.js"></script>
+<script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/components/Waves/dist/waves.min.js"></script>
+<script src="/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+<script src="/components/moment/min/moment.min.js"></script>
+<script src="/components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/components/simpleWeather/jquery.simpleWeather.min.js"></script>
+<script src="/components/salvattore/dist/salvattore.min.js"></script>
+
+<script src="/components/flot/jquery.flot.js"></script>
+<script src="/components/flot/jquery.flot.resize.js"></script>
+<script src="/components/flot.curvedlines/curvedLines.js"></script>
+<script src="/vendors/sparklines/jquery.sparkline.min.js"></script>
+<script src="/components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<script src="/js/flot-charts/curved-line-chart.js"></script>
+<script src="/js/flot-charts/line-chart.js"></script>
+
+<script src="/components/restful.js/dist/restful.js"></script>
+
+<!-- Placeholder for IE9 -->
+<!--[if IE 9 ]>
+<script src="/components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<![endif]-->
+
+<script src="/js/charts.js"></script>
+<script src="/js/functions.js"></script>
+<script src="/js/actions.js"></script>
+<script src="/js/app.js"></script>
+<?= $this->inlineScript() ?>
+</body>
+</html>

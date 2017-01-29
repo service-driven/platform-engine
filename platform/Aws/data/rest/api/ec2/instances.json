@@ -1,0 +1,2178 @@
+{
+    "Reservations": [
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-035ba2e01b7bf62b0", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-52-57-25-95.eu-central-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-08T08:12:23.000Z", 
+                    "PublicIpAddress": "52.57.25.95", 
+                    "PrivateIpAddress": "10.18.2.54", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-00d876bf5f695979f", 
+                    "ImageId": "ami-9659a9f9", 
+                    "PrivateDnsName": "ip-10-18-2-54.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-BastionSecurityGroup-1HG2V6AWXLQP4", 
+                            "GroupId": "sg-f240da9a"
+                        }
+                    ], 
+                    "ClientToken": "DEV-B-Basti-1RPUMEURQIJD1", 
+                    "SubnetId": "subnet-7a93cf13", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:ef:71:14:16:b7", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "Association": {
+                                "PublicIp": "52.57.25.95", 
+                                "PublicDnsName": "ec2-52-57-25-95.eu-central-1.compute.amazonaws.com", 
+                                "IpOwnerId": "074934811965"
+                            }, 
+                            "NetworkInterfaceId": "eni-72182118", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-54.eu-central-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "52.57.25.95", 
+                                        "PublicDnsName": "ec2-52-57-25-95.eu-central-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "074934811965"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.54"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-54.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-d6fb1b10", 
+                                "AttachTime": "2016-09-08T08:12:23.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-BastionSecurityGroup-1HG2V6AWXLQP4", 
+                                    "GroupId": "sg-f240da9a"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7a93cf13", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.54"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-614f09eb", 
+                                "AttachTime": "2016-09-08T08:12:23.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIEM3AFXNAPVIAVYGW", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-BASTION-BastionInstanceProfile-PHZSFWIQOZMB"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "BastionNode", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "bastion_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-BASTION/7d9c8850-759b-11e6-a042-50a68ae714c6", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "DEV-BASTION", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-09f1ac281ff9f4a98", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-27T07:35:33.000Z", 
+                    "PrivateIpAddress": "10.18.2.201", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0a6899f23da941329", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-201.eu-central-1.compute.internal", 
+                    "KeyName": "hopp052", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-LogstashSecurityGroup-1J7FQGM61TIAB", 
+                            "GroupId": "sg-ea010883"
+                        }
+                    ], 
+                    "ClientToken": "DEV-L-Logst-1BGHIITBM1NFQ", 
+                    "SubnetId": "subnet-e8512293", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:26:b0:9a:ee:53", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-b293d9ce", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-201.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.201"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-201.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-a356fe7a", 
+                                "AttachTime": "2016-09-27T07:35:33.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-LogstashSecurityGroup-1J7FQGM61TIAB", 
+                                    "GroupId": "sg-ea010883"
+                                }
+                            ], 
+                            "SubnetId": "subnet-e8512293", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.201"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-e2925a5f", 
+                                "AttachTime": "2016-09-27T07:35:34.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-519159ec", 
+                                "AttachTime": "2016-09-27T07:35:34.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJ7JPVLOCM2JDUX7S2", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-LOGSTASH-Logstash2InstanceProfile-7F8UBFBYPN0Q"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "logstash2_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "DEV-LOGSTASH", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "Logstash2Node", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-LOGSTASH/958fc720-7a7c-11e6-ba54-50a68a770c1e", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0fd7c4f2f7b026cea", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-18T14:14:11.000Z", 
+                    "PrivateIpAddress": "10.18.2.232", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0257c4b4d7d853666", 
+                    "ImageId": "ami-9659a9f9", 
+                    "PrivateDnsName": "ip-10-18-2-232.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-SensuSecurityGroup-T8V8U0IEFTHN", 
+                            "GroupId": "sg-ed010884"
+                        }
+                    ], 
+                    "ClientToken": "e1b3e599-044b-416b-8b93-2c75ae764830_subnet-e8512293_1", 
+                    "SubnetId": "subnet-e8512293", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:7c:d1:b1:51:d9", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-cd1dcdb2", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-232.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.232"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-232.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-6d4cf4dc", 
+                                "AttachTime": "2016-11-18T14:14:11.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-SensuSecurityGroup-T8V8U0IEFTHN", 
+                                    "GroupId": "sg-ed010884"
+                                }
+                            ], 
+                            "SubnetId": "subnet-e8512293", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.232"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-624650f8", 
+                                "AttachTime": "2016-11-18T14:14:11.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIYJ4KVYATNCEYNX3U", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SENSU-SensuInstanceProfile-15HHRKTPDEP0U"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "SensuAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SENSU/ebc5c610-74f7-11e6-89f2-503f2ad2e536", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "DEV-SENSU", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "sensu_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "DEV-SENSU-SensuAutoScalingGroup-ZZE2FM8GA866", 
+                            "Key": "aws:autoscaling:groupName"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0c17d0e0e1137a351", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-26T12:49:31.000Z", 
+                    "PrivateIpAddress": "10.18.2.156", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0d0b345ef17cb206a", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-156.eu-central-1.compute.internal", 
+                    "KeyName": "hopp052", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-LogstashSecurityGroup-1J7FQGM61TIAB", 
+                            "GroupId": "sg-ea010883"
+                        }
+                    ], 
+                    "ClientToken": "DEV-L-Logst-VFC9PRG5P3FL", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:5d:91:8e:e0:89", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-81fb17ec", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-156.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.156"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-156.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-b72fed71", 
+                                "AttachTime": "2016-09-26T12:49:31.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-LogstashSecurityGroup-1J7FQGM61TIAB", 
+                                    "GroupId": "sg-ea010883"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.156"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-00367e8a", 
+                                "AttachTime": "2016-09-26T12:49:31.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-e3367e69", 
+                                "AttachTime": "2016-09-26T12:49:31.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAINENI5EJG7CJ6VTCQ", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-LOGSTASH-Logstash1InstanceProfile-PQS9UAE87B3N"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "logstash1_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Logstash1Node", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "DEV-LOGSTASH", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-LOGSTASH/958fc720-7a7c-11e6-ba54-50a68a770c1e", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0a69f209367bbea28", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-28T15:17:09.000Z", 
+                    "PrivateIpAddress": "10.18.2.174", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-06a7b7eeb7220f0c9", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-174.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                            "GroupId": "sg-bd5530d5"
+                        }
+                    ], 
+                    "ClientToken": "1ceb2c7d-bef5-45fd-a0cc-de04c6068cd5_subnet-7c93cf15_2", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:30:2c:70:90:3f", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-02a3f56f", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-174.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.174"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-174.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-ea04d36a", 
+                                "AttachTime": "2016-11-28T15:17:09.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                                    "GroupId": "sg-bd5530d5"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.174"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-232f07a9", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-f72f077d", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIY3UOUDRFPOAFKNMW", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cInstanceProfile-D31JD41S4GVQ"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "shop_frontend_b2c_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-FRONTEND-B2C/83546860-75bb-11e6-8025-50a68ae7142a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "ShopFrontendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0e6e6bad74933eeff", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-08T08:58:24.000Z", 
+                    "PrivateIpAddress": "10.18.2.160", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-00fec7cb6e509e56e", 
+                    "ImageId": "ami-9659a9f9", 
+                    "PrivateDnsName": "ip-10-18-2-160.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-GraylogSecurityGroup-AXH6AZP3DXC9", 
+                            "GroupId": "sg-0d425864"
+                        }
+                    ], 
+                    "ClientToken": "DEV-G-Grayl-1KIQF359WZA6A", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "m4.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:e4:4a:a8:c4:2f", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-7b013811", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-160.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.160"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-160.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-79cc2cbf", 
+                                "AttachTime": "2016-09-08T08:58:24.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-GraylogSecurityGroup-AXH6AZP3DXC9", 
+                                    "GroupId": "sg-0d425864"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.160"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-3c490fb6", 
+                                "AttachTime": "2016-09-08T08:58:24.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-66490fec", 
+                                "AttachTime": "2016-09-08T08:58:24.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIXMIDOD7CZWDGYMBI", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-GRAYLOG-GraylogInstanceProfile-15312Y2KP4LF"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-GRAYLOG/e93974a0-75a1-11e6-bb12-503f2ad2e5fe", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "GraylogNode", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "DEV-GRAYLOG", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "graylog_node", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0d003fa4982b01aee", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-06T19:53:31.000Z", 
+                    "PrivateIpAddress": "10.18.2.132", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0fa86fab5e61131af", 
+                    "ImageId": "ami-f807e297", 
+                    "PrivateDnsName": "ip-10-18-2-132.eu-central-1.compute.internal", 
+                    "KeyName": "mschulderinsky", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                            "GroupId": "sg-2a28b442"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:32:71:26:1f:3d", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-89b023e4", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-132.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.132"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-132.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-b4d3de0a", 
+                                "AttachTime": "2016-11-06T19:53:31.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                                    "GroupId": "sg-2a28b442"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.132"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-ba8daa30", 
+                                "AttachTime": "2016-11-06T19:53:31.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJOFXPNPZ4FYIVOUH4", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/STAGE-B2B-SOMEDAY-PACKER"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0f0e01d3fed9fd986", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-30T21:45:23.000Z", 
+                    "PrivateIpAddress": "10.18.2.139", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-012a5256a380a2efc", 
+                    "ImageId": "ami-584fb337", 
+                    "PrivateDnsName": "ip-10-18-2-139.eu-central-1.compute.internal", 
+                    "KeyName": "cweiss", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "cweiss-b2b-someday-2016-09-29-WebServerSecurityGroup-VI0KLRDL7YV3", 
+                            "GroupId": "sg-d7c4b0bf"
+                        }
+                    ], 
+                    "ClientToken": "cweis-WebSe-LJAZ1X4MFYG5", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:21:dd:27:06:45", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-1a31c177", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-139.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.139"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-139.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-9e60b558", 
+                                "AttachTime": "2016-09-30T21:45:23.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "cweiss-b2b-someday-2016-09-29-WebServerSecurityGroup-VI0KLRDL7YV3", 
+                                    "GroupId": "sg-d7c4b0bf"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.139"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-3cb7fdb6", 
+                                "AttachTime": "2016-09-30T21:45:23.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "WebServer", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "cweiss-b2b-someday-2016-09-29", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "cweiss-b2b-someday-2016-09-29", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/cweiss-b2b-someday-2016-09-29/20f57300-8757-11e6-9799-500c44f6229a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0d69a81b8407974d8", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-52-58-3-213.eu-central-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-03-15T14:42:14.000Z", 
+                    "PublicIpAddress": "52.58.3.213", 
+                    "PrivateIpAddress": "10.18.2.22", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0c92850a0eff94a14", 
+                    "ImageId": "ami-7e9b7c11", 
+                    "PrivateDnsName": "ip-10-18-2-22.eu-central-1.compute.internal", 
+                    "KeyName": "telh001aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-AdminSecurityGroup-16ONII7WZXNY5", 
+                            "GroupId": "sg-0601086f"
+                        }, 
+                        {
+                            "GroupName": "DEV-CHEF-SecurityGroup-XUG0B7TOGH6W", 
+                            "GroupId": "sg-ea050c83"
+                        }
+                    ], 
+                    "ClientToken": "DEV-C-Insta-3IV8FVU0TS0M", 
+                    "SubnetId": "subnet-7a93cf13", 
+                    "InstanceType": "t2.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:d9:3b:bd:f3:43", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "Primary network interface", 
+                            "Association": {
+                                "PublicIp": "52.58.3.213", 
+                                "PublicDnsName": "ec2-52-58-3-213.eu-central-1.compute.amazonaws.com", 
+                                "IpOwnerId": "074934811965"
+                            }, 
+                            "NetworkInterfaceId": "eni-38b26d53", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-22.eu-central-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "52.58.3.213", 
+                                        "PublicDnsName": "ec2-52-58-3-213.eu-central-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "074934811965"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.22"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-22.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-b552b874", 
+                                "AttachTime": "2016-03-15T14:42:14.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-AdminSecurityGroup-16ONII7WZXNY5", 
+                                    "GroupId": "sg-0601086f"
+                                }, 
+                                {
+                                    "GroupName": "DEV-CHEF-SecurityGroup-XUG0B7TOGH6W", 
+                                    "GroupId": "sg-ea050c83"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7a93cf13", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.22"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-82c5215a", 
+                                "AttachTime": "2016-03-15T14:42:14.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "DEV-CHEF", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "Instance", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-CHEF/0c2dfd80-eabc-11e5-817b-503f2ad2e59a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "chef", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-07948515d6bcda9ae", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-24T14:42:56.000Z", 
+                    "PrivateIpAddress": "10.18.2.253", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0e2265b4f71f5099d", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-253.eu-central-1.compute.internal", 
+                    "KeyName": "telh001aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopBackendB2cSecurityGroup-C4FSNO96JVRB", 
+                            "GroupId": "sg-bc5530d4"
+                        }
+                    ], 
+                    "ClientToken": "e70ba3fc-3382-436c-8ebf-7b046ecefc14_subnet-e8512293_1", 
+                    "SubnetId": "subnet-e8512293", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:d2:6e:ee:94:19", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-dfc060a0", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-253.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.253"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-253.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-a4b5f324", 
+                                "AttachTime": "2016-11-24T14:42:56.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopBackendB2cSecurityGroup-C4FSNO96JVRB", 
+                                    "GroupId": "sg-bc5530d4"
+                                }
+                            ], 
+                            "SubnetId": "subnet-e8512293", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.253"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-8e8b9814", 
+                                "AttachTime": "2016-11-24T14:42:56.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-be8b9824", 
+                                "AttachTime": "2016-11-24T14:42:56.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIOA7YTOFCL5FRNUDI", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-BACKEND-B2C-ShopBackendB2cInstanceProfile-1SIJAHNB020FD"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "ShopBackendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-BACKEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-BACKEND-B2C/908d2b80-75b5-11e6-ab1b-500c52a6ce62", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "shop_backend_b2c_node", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0788a443cc1ffe799", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-24T14:42:56.000Z", 
+                    "PrivateIpAddress": "10.18.2.144", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0d183d64a83f80b3b", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-144.eu-central-1.compute.internal", 
+                    "KeyName": "telh001aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopBackendB2cSecurityGroup-C4FSNO96JVRB", 
+                            "GroupId": "sg-bc5530d4"
+                        }
+                    ], 
+                    "ClientToken": "e70ba3fc-3382-436c-8ebf-7b046ecefc14_subnet-7c93cf15_1", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:a9:01:2d:68:33", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0cefa261", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-144.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.144"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-144.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-5d668dec", 
+                                "AttachTime": "2016-11-24T14:42:56.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopBackendB2cSecurityGroup-C4FSNO96JVRB", 
+                                    "GroupId": "sg-bc5530d4"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.144"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-13f4da99", 
+                                "AttachTime": "2016-11-24T14:42:57.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-62f4dae8", 
+                                "AttachTime": "2016-11-24T14:42:57.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIOA7YTOFCL5FRNUDI", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-BACKEND-B2C-ShopBackendB2cInstanceProfile-1SIJAHNB020FD"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-BACKEND-B2C/908d2b80-75b5-11e6-ab1b-500c52a6ce62", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "ShopBackendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-BACKEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-BACKEND-B2C-ShopBackendB2cAutoScalingGroup-Y0QLF9JLZWMX", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "shop_backend_b2c_node", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-016e5d28584323874", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-06T19:01:50.000Z", 
+                    "PrivateIpAddress": "10.18.2.163", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-053a9cb73cb613a7a", 
+                    "ImageId": "ami-f807e297", 
+                    "PrivateDnsName": "ip-10-18-2-163.eu-central-1.compute.internal", 
+                    "KeyName": "mschulderinsky", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                            "GroupId": "sg-2a28b442"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:fd:57:fe:9a:c7", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-529c0f3f", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-163.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.163"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-163.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-f0c0cd4e", 
+                                "AttachTime": "2016-11-06T19:01:50.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                                    "GroupId": "sg-2a28b442"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.163"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0d80a787", 
+                                "AttachTime": "2016-11-06T19:01:50.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJOFXPNPZ4FYIVOUH4", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/STAGE-B2B-SOMEDAY-PACKER"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0ced2260725a86772", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-28T15:28:20.000Z", 
+                    "PrivateIpAddress": "10.18.2.188", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0b0b7ae5c3dbcc43c", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-188.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                            "GroupId": "sg-bd5530d5"
+                        }
+                    ], 
+                    "ClientToken": "b92cc672-de63-4950-b550-0081ce8f19d0_subnet-7c93cf15_1", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:c9:d8:f1:3f:8b", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-07adfb6a", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-188.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.188"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-188.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-3f00d7bf", 
+                                "AttachTime": "2016-11-28T15:28:20.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                                    "GroupId": "sg-bd5530d5"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.188"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0a200880", 
+                                "AttachTime": "2016-11-28T15:28:21.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-8a200800", 
+                                "AttachTime": "2016-11-28T15:28:21.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIY3UOUDRFPOAFKNMW", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cInstanceProfile-D31JD41S4GVQ"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "ShopFrontendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "shop_frontend_b2c_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-FRONTEND-B2C/83546860-75bb-11e6-8025-50a68ae7142a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0fedfe7eb4cf2c3b1", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-10-27T10:02:58.000Z", 
+                    "PrivateIpAddress": "10.18.2.189", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-04b19188851675369", 
+                    "ImageId": "ami-9659a9f9", 
+                    "PrivateDnsName": "ip-10-18-2-189.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-BASE-GraphiteSecurityGroup-MVTT0ZYEJNMN", 
+                            "GroupId": "sg-f9010890"
+                        }
+                    ], 
+                    "ClientToken": "DEV-G-Graph-VDTM46GGQFCD", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:38:a8:59:a7:f3", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-16823d7b", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-189.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.189"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-189.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-028dbabc", 
+                                "AttachTime": "2016-10-27T10:02:58.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-BASE-GraphiteSecurityGroup-MVTT0ZYEJNMN", 
+                                    "GroupId": "sg-f9010890"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.189"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-26b4ecac", 
+                                "AttachTime": "2016-10-27T10:02:59.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-4cb4ecc6", 
+                                "AttachTime": "2016-10-27T10:02:59.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJXMDXG4ZQWHXFR2H4", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-GRAPHITE-GraphiteInstanceProfile-1GTFI4CCHIWQI"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "DEV-GRAPHITE", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "graphite_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-GRAPHITE/248c3300-74fb-11e6-8b2c-50a68ae7142a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "GraphiteNode", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0d8a0924c9144036f", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-09-30T22:18:56.000Z", 
+                    "PrivateIpAddress": "10.18.2.180", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0544bf1658bb9d9e9", 
+                    "ImageId": "ami-f807e297", 
+                    "PrivateDnsName": "ip-10-18-2-180.eu-central-1.compute.internal", 
+                    "KeyName": "cweiss", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                            "GroupId": "sg-2a28b442"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-7c93cf15", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:d3:5b:24:d0:3f", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-b421d1d9", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-180.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.180"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-180.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-189440de", 
+                                "AttachTime": "2016-09-30T22:18:56.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-B2B-SOMEDAY-WEBNODE", 
+                                    "GroupId": "sg-2a28b442"
+                                }
+                            ], 
+                            "SubnetId": "subnet-7c93cf15", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.180"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-7fb5fff5", 
+                                "AttachTime": "2016-09-30T22:18:57.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJOFXPNPZ4FYIVOUH4", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/STAGE-B2B-SOMEDAY-PACKER"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "cweiss-b2b-someday-kitchen", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "074934811965", 
+            "ReservationId": "r-0696b5b40e83c51f1", 
+            "Groups": [], 
+            "RequesterId": "226008221399", 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-28T15:17:09.000Z", 
+                    "PrivateIpAddress": "10.18.2.223", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0f7576f65b9352935", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-223.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                            "GroupId": "sg-bd5530d5"
+                        }
+                    ], 
+                    "ClientToken": "1ceb2c7d-bef5-45fd-a0cc-de04c6068cd5_subnet-e8512293_2", 
+                    "SubnetId": "subnet-e8512293", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:3c:6c:a7:64:df", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-9e8f25e1", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-223.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.223"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-223.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-ac0d442c", 
+                                "AttachTime": "2016-11-28T15:17:09.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                                    "GroupId": "sg-bd5530d5"
+                                }
+                            ], 
+                            "SubnetId": "subnet-e8512293", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.223"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-28766ab2", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-55766acf", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIY3UOUDRFPOAFKNMW", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cInstanceProfile-D31JD41S4GVQ"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-FRONTEND-B2C/83546860-75bb-11e6-8025-50a68ae7142a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "shop_frontend_b2c_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "ShopFrontendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }, 
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-11-28T15:17:09.000Z", 
+                    "PrivateIpAddress": "10.18.2.222", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-22bbfe4b", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-09509ff8fd804bc55", 
+                    "ImageId": "ami-ba46bbd5", 
+                    "PrivateDnsName": "ip-10-18-2-222.eu-central-1.compute.internal", 
+                    "KeyName": "hellm01aws", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                            "GroupId": "sg-bd5530d5"
+                        }
+                    ], 
+                    "ClientToken": "1ceb2c7d-bef5-45fd-a0cc-de04c6068cd5_subnet-e8512293_2", 
+                    "SubnetId": "subnet-e8512293", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:8f:25:38:30:6d", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-22bbfe4b", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-9d8f25e2", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-18-2-222.eu-central-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.18.2.222"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-18-2-222.eu-central-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-ad0d442d", 
+                                "AttachTime": "2016-11-28T15:17:09.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DEV-SHOP-BASE-B2C-ShopFrontendB2cSecurityGroup-1LKBQUBMLAM8H", 
+                                    "GroupId": "sg-bd5530d5"
+                                }
+                            ], 
+                            "SubnetId": "subnet-e8512293", 
+                            "OwnerId": "074934811965", 
+                            "PrivateIpAddress": "10.18.2.222"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "eu-central-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-54766ace", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-21766abb", 
+                                "AttachTime": "2016-11-28T15:17:10.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIY3UOUDRFPOAFKNMW", 
+                        "Arn": "arn:aws:iam::074934811965:instance-profile/DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cInstanceProfile-D31JD41S4GVQ"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "arn:aws:cloudformation:eu-central-1:074934811965:stack/DEV-SHOP-FRONTEND-B2C/83546860-75bb-11e6-8025-50a68ae7142a", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "dev", 
+                            "Key": "ChefEnv"
+                        }, 
+                        {
+                            "Value": "shop_frontend_b2c_node", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "opf-cloud-dev", 
+                            "Key": "ChefOrg"
+                        }, 
+                        {
+                            "Value": "hellm01", 
+                            "Key": "creator"
+                        }, 
+                        {
+                            "Value": "DEV-SHOP-FRONTEND-B2C-ShopFrontendB2cAutoScalingGroup-1QAL5L033KOJ9", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "ShopFrontendB2cAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 1
+                }
+            ]
+        }
+    ]
+}

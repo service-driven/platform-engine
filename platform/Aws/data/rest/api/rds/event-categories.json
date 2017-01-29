@@ -1,0 +1,58 @@
+{
+    "EventCategoriesMapList": [
+        {
+            "EventCategories": [
+                "availability", 
+                "configuration change", 
+                "restoration", 
+                "failure", 
+                "read replica", 
+                "creation", 
+                "maintenance", 
+                "failover", 
+                "recovery", 
+                "backup", 
+                "low storage", 
+                "deletion", 
+                "notification"
+            ], 
+            "SourceType": "db-instance"
+        }, 
+        {
+            "EventCategories": [
+                "configuration change", 
+                "failure"
+            ], 
+            "SourceType": "db-security-group"
+        }, 
+        {
+            "EventCategories": [
+                "configuration change"
+            ], 
+            "SourceType": "db-parameter-group"
+        }, 
+        {
+            "EventCategories": [
+                "restoration", 
+                "creation", 
+                "deletion", 
+                "notification"
+            ], 
+            "SourceType": "db-snapshot"
+        }, 
+        {
+            "EventCategories": [
+                "failure", 
+                "failover", 
+                "notification"
+            ], 
+            "SourceType": "db-cluster"
+        }, 
+        {
+            "EventCategories": [
+                "backup"
+            ], 
+            "SourceType": "db-cluster-snapshot"
+        }
+    ]
+}
